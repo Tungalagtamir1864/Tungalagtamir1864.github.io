@@ -1,12 +1,12 @@
 :root {
-    
-    --title-red-color: #902A0A;
-    --footer-bg-color: #383232;
-    --main-bg-color: #f0f0f0;
-    --title-red-color05: #90290a34;
-    --bt-green: #376A37;
-    --check-green: #00ff00;
+  --title-yellow-color: #FF9900;
+  --footer-bg-color: #383232;
+  --main-bg-color: #f0f0f0;
+  --title-red-color05: #90290a34;
+  --bt-green: #376a37;
+  --check-green: #00ff00;
 }
+
 .border-r-20{
     border-radius: 20px;
 }
@@ -72,7 +72,7 @@ a {
     color: black;
 }
 body {
-    font-family: 'Roboto Slab', serif;
+    /*font-family: 'Roboto Slab', serif;*/
     line-height: 1.5rem;
     /* body хэсэгт орж ирэх бүх font-ийг Roboto Slab болгох хэрвээ тэр уншиигдххгүй бол serif болох*/
 }
@@ -180,3 +180,557 @@ header .header-right nav>ul>li>a:hover::after{
 @keyframes animateright{
     from{right:100px;opacity:0; font-size: 5px;} to{right:0;opacity:1}}
 
+
+#social {
+    display: flex;
+    justify-content: end;
+}
+#social img {
+    margin: 0.2rem 0.5rem;
+    width: 1.3rem;
+    height: 1.3rem;
+}
+.logo img{
+    width: 5rem;
+    height: auto;
+}
+#main-title{
+    font-size: 1.6rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    color: var(--title-red-color);
+}
+/* hamnurger menu display none */
+#hamburger{
+    display: none;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    top: 2rem;
+    transition: 0.4s;
+    
+}
+/* энгийн үед none байж байгаад display багасаад ирэхэд гарч ирнэ */
+#mobile-menu{
+    display: none;
+}
+.open #mobile-menu{
+    display: block;
+    position: absolute;
+    background: var(--main-bg-color);
+    top: 4rem;
+    right: -3rem;
+    width: 11rem;
+    height: auto;
+    box-shadow: 0.2px 0.2px 0.2px rgba(0, 0, 0, 0.5);
+    
+}
+.open #mobile-menu>li li{
+    opacity: 0.8;
+}
+/* hamburger 3 зураас */
+#hamburger .bars div{
+    width: 2rem;
+    background: var(--title-red-color);
+    height: 0.1rem;
+    margin: 0.5rem;
+    position: relative;
+    right: 0;
+    transition: 0.4s;
+}
+/* hamburger 3 зураас дээр дарахад x тэмдэг болно */
+.open .bar1 {
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+  
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+/* hamburger 3 зураас дээр дарахад x тэмдэг болно */
+
+
+/* home хэсгийн css (((((((((((((((((((((((((((((((*/
+/* home img хэсэг */
+#home{
+    background: url("../PICTURES/home.webp") center center/cover no-repeat;
+    height: 90vh;
+}
+#home .home-img{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 90vh;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#home .home-img div {
+    border: solid 0.1px white;
+    padding: 5rem;
+    word-spacing: 0.3rem;
+    width: 60vw;
+}
+#home .home-img div h2{
+    margin-bottom: 5rem;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 500;
+    /* mobile font */
+}
+#home .home-img div p{
+    font-size: 1.2rem;
+}
+
+/* section tours хэсэг framework((((( */
+.top-tour h2 {
+    font-size: 1.8rem;
+    color: var(--title-red-color);
+    margin: 3rem;
+}
+.top-tour {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.section {
+    width: 80vw;
+    margin: auto;
+}
+.section .articles{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    /* mobile дээр repeat 2, 1 болгох хэрэгтэй */
+}
+/* tour-ийн cards хурц ирмэг үүсгэхгүй */
+.section .articles article {
+    margin: 1rem;
+    border-radius: 3% 3% 3% 3%;
+    border-left: solid 1px rgba(0, 0, 0, 0.05);
+    border-bottom: solid 1px rgba(0, 0, 0, 0.05);
+    border-right: solid 1px rgba(0, 0, 0, 0.05);
+}
+.section .articles article img{
+    width: 100%;
+    border-radius: 3% 3% 0 0;
+}
+.section .articles article a{
+    color: black;
+}
+
+/* tour cards hover effect */
+.section .articles article:hover{
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* section tours хэсэг framework)))) */
+
+/* footer хэсэг */
+footer{
+    margin-top: 5rem;
+    text-align: center;
+    background-color: var(--footer-bg-color);
+    color: rgba(255, 255, 255, 0.75);
+    padding: 2rem;
+}
+/* home хэсгийн css )))))))))))))))))))))))))))))))))))*/
+
+
+
+
+/* experience хуудсийн css(((((((((((((((((((((((((( */
+
+
+
+/* page болгоны гарчиг ашигладаг хэмжээ */
+/* experience хуудсийн title хэсэг болгоны өндөр */
+.page-title-height{
+    height: 40vh;
+}
+
+.act {
+    background: url("/exp_pic/act.webp") center center/cover no-repeat;
+}
+
+/* text-ийг нь тод харагдуулахын тулд илүү div ашигласан background-color: rgba(0, 0, 0, 0.2); */
+.page-title-height .page-title-name{
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 40vh;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page-title-height .page-title-name h2{
+    font-size: 3rem;
+    letter-spacing: 0.25rem;
+}
+/* title desc хэсгийн css */
+.title-desc{
+    margin: 2rem 4rem;
+    word-spacing: 0.2rem;
+    color: rgba(0, 0, 0, 0.9);
+}
+/* дээд талдаа 3 column */
+.experiences{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90vw;
+    margin: auto;
+    gap: 2rem;
+    /* mobile repeat багасгана */
+}
+/*  */
+.experiences .exp-overlay{
+    width: 100%;
+    position: relative; 
+    justify-self: center;
+}
+.experiences .exp-overlay img{
+    width: 100%;
+    height: 100%;
+}
+/* mobule exp repeat бага болгоно */
+/* энгийн үед height 30% байна hover үед 100% болгоод overlay хийнэ */
+.experiences .exp-overlay .overlay{
+    position: absolute;
+    /* зураг дээр байршуулах */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.5);
+    /* hover хийсний дараагаар Height 100% болгож өгөх */
+    height: 30%;
+    transition-property: all;
+    transition: 0.5s ease;
+}
+.exp-overlay:hover .overlay {
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* experience хуудсийн css))))))))))))))))))))))))))))) */
+/* tour->fun tour хуудсийн css(((((((((((((((((((((((((((((( */
+.fun-tours{
+    background: url("/PICTURES/fun.webp") center center/cover no-repeat;
+}
+/* tour->fun tour хуудсийн css)))))))))))))))))))) */
+
+
+
+/* tour info tour хуудсийн css(((((((((((((((((((((((( */
+.scene-n-p{
+    background: url("/PICTURES/tour1.webp") center center/cover no-repeat;
+}
+.overview {
+    display: flex;
+    padding: 0.5rem 0;
+    background: var(--main-bg-color);
+    position: sticky;
+    top: 6rem;
+    z-index: 9;
+}
+
+.overview ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.overview ul li{
+    margin-left: 1.5rem;
+}
+.overview ul li a{
+    color: rgba(0, 0, 0, 0.75);
+    letter-spacing: 0.1rem;
+}
+.overview ul li a:hover{
+    color: var(--title-red-color);
+    font-weight: 900;
+}
+.scale13{
+    transform: scale(1.3, 1.3);
+}
+/* mobile fonts or */
+
+.container {
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "info info side"
+    ;
+    gap: 2rem;  
+    
+}
+.container .info {
+    grid-area: info;
+
+}
+.container .info>p{
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+.container .info .tour-overview{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.container .info section h3{
+    color: var(--title-red-color);
+    font-weight: bold;
+    border-bottom: 1px solid var(--title-red-color05);
+    padding-bottom: 1rem;
+    margin-top: 3rem;
+}
+.container .info section{
+    margin-bottom: 0rem;
+}
+.container .info section article h4{
+    font-weight: bold;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.container .info .tour-overview .item1{
+    margin: 1rem;
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    /* mobile repeat */
+}
+.container .info .tour-overview .item1 p{
+    text-align: center;
+}
+#choose{
+    display: flex;
+    gap: 5rem;
+}
+#choose div ul li{
+    display: flex;
+    background: var(--main-bg-color);
+    width: 4rem;
+    height: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    align-items: center; 
+    transition-property: all;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in;
+    border-radius: 20px;
+    margin-bottom: 0.2rem;
+}
+#choose div ul li:hover{
+    background: var(--bt-green);
+    color: white;
+    transform: scale(1.2);
+}
+.prices {
+    display: flex;
+    flex-direction: column;
+}
+.prices>div{
+    width: 70%;
+    margin: 2rem auto;
+}
+.price {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: var(--main-bg-color);
+    border-bottom: 1px solid black;
+    padding: 1rem;
+}
+
+/* side хэсгийн css */
+.container .side{
+    display: grid;
+    grid-area: side;
+    height: 80vh;
+    width: 100%;
+    position: sticky;
+    top: 20vh;
+    margin-top: 1rem;  
+}
+#booking form{
+    display: flex;
+    flex-direction: column;
+    background: var(--main-bg-color);
+    height: auto;
+}
+#booking form div{
+    display: flex;
+    padding: 1rem;
+}
+#booking form div i{
+    padding: 0.5rem;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+
+}
+#booking form div input{
+    width: 70%;
+    position: absolute;
+    right: 1rem;
+    padding: 0.5rem;
+}
+#proceed{
+    background-color: black;
+    color: white;
+}
+.container .side section{
+    background: var(--main-bg-color);
+    align-items: center;
+}
+@media (max-width: 1400px) {
+    .experiences{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+}
+@media (max-width: 1150px) {
+    .section .articles{
+        grid-template-columns: repeat(2, 1fr);
+        /* mobile дээр repeat 2, 1 болгох хэрэгтэй */
+    }
+}
+@media (max-width: 1100px) {
+    /* menu hamburger */
+    header nav {
+        display: none;
+    }
+    #hamburger{
+        display: flex;
+    }
+    #social{
+        display: none;
+    }
+    header {
+        padding: 0 3rem;
+    }
+    .container {
+        grid-template-areas: 
+        "info info info"
+        "side side side"
+        ;        
+    }
+    .container .side{
+        position: static;
+    }
+
+    .overview ul{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+@media (max-width: 910px) {
+
+    .experiences{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (max-width: 760px) {
+    /* menu hamburger */
+    .section .articles{
+        grid-template-columns: repeat(1, 1fr);
+        /* mobile дээр repeat 2, 1 болгох хэрэгтэй */
+    }
+
+    #home .home-img div {
+        padding: 1rem;
+    }
+    #home .home-img div h2{
+        margin-bottom: 5rem;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        font-weight: 500;
+        /* mobile font */
+    }
+    #home .home-img div p{
+        font-size: 0.7rem;
+    }
+    .overview ul li{
+        margin-left: 1rem;
+        font-size: 0.8rem;
+    }    
+    #choose{
+        gap: 1rem;
+    }
+}
+@media (max-width: 710px) {
+    header {
+        padding: 0 1rem;
+    }
+    .logo h1 {
+        letter-spacing: 0.3rem;
+        width: 13rem;
+        font-size: 1rem;
+    }
+    #main-title{
+        font-size: 1.2rem;
+    }
+    .logo img{
+        width: 4rem;
+        height: auto;
+    }
+    header{
+        height: 5rem;
+    }
+    .open #mobile-menu{
+        top: 3.5rem;
+    }
+    #hamburger{
+        top: 1.5rem;
+    }
+    .page-title-height .page-title-name h2{
+        font-size: 2rem;
+        line-height: 2rem;
+        letter-spacing: 0.2rem;
+    }
+    .overview {
+        top: 5rem;
+    }
+    .container .info .tour-overview .item1{
+        grid-template-columns: repeat(1, 1fr);
+        /* mobile repeat */
+    }
+    .title-desc{
+        margin: 2rem 1rem;
+    }
+    .open #mobile-menu{
+        right: -1rem;
+    }
+    
+}
+@media (max-width: 580px) {
+        .overview ul{
+        margin: 0 2%;
+    }
+    .overview ul li{
+        margin-left: 0.5rem;
+        font-size: 0.6rem;
+    }
+    .experiences .exp-overlay{
+        width: 20rem; 
+        margin: 0 1rem 2rem 1rem;
+    }
+}
