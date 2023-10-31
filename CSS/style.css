@@ -8,6 +8,19 @@
   --check-green: #00ff00;
 }
 
+.font-bold{
+    font-weight: bold;
+}
+.t-center{
+    text-align: center;
+}
+
+.i-center{
+    align-items: center;
+}
+.mar-t-5 {
+    margin-top: 5rem;
+}
 * {
   margin: 0;
   padding: 0;
