@@ -1,0 +1,182 @@
+:root {
+    
+    --title-red-color: #902A0A;
+    --footer-bg-color: #383232;
+    --main-bg-color: #f0f0f0;
+    --title-red-color05: #90290a34;
+    --bt-green: #376A37;
+    --check-green: #00ff00;
+}
+.border-r-20{
+    border-radius: 20px;
+}
+.cgreen{
+    color: var(--check-green);
+}
+.red{
+    color: var(--title-red-color);
+}
+.red05{
+    color: var(--title-red-color05);
+}
+.mar-r-05{
+    margin-right: 0.5rem;
+}
+.mar-l-1{
+    margin-left: 2rem;
+}
+.mar-b-05 {
+    margin-bottom: 0.5rem;
+}
+.mar-b-1 {
+    margin-bottom: 1rem;
+}
+.mar-t-5 {
+    margin-top: 5rem;
+}
+.mar-t-2 {
+    margin-top: 2rem;
+}
+.mar-b-5 {
+    margin-bottom: 5rem;
+}
+.half-br{
+    border-radius: 3% 3% 0 0;
+}
+.full-br{
+    border-radius: 3% 3% 3% 3%;
+}
+.wi-10r{
+    min-width: 10rem;
+}
+.wi-15r{
+    min-width: 13rem;
+}
+.font-bold{
+    font-weight: bold;
+}
+.t-center{
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-weight: 100;
+
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+body {
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.5rem;
+    /* body хэсэгт орж ирэх бүх font-ийг Roboto Slab болгох хэрвээ тэр уншиигдххгүй бол serif болох*/
+}
+
+/* header хэсэг */
+/* header scrold-ход дээр үлдэх ёстой */
+header {
+    display: grid;
+    padding: 0 7rem;
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.729);
+    backdrop-filter: blur(5px);
+    box-shadow: 0.2px 0.2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    height: 6rem;
+    grid-template-areas: 
+    "logo nav nav"
+    ;
+}
+header .header-right{
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* nav хэсэг */
+/* mobile header */
+header .header-right nav>ul{
+    display: flex;
+    justify-content: space-between;
+}
+header .header-right nav>ul>li{
+    padding-left: 2rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+/* inlineblock болон realitive болгосноор hover underline effect зөв ажиллана. */
+header .header-right nav>ul>li a{
+    color: black; 
+    display: inline-block;
+    position: relative;
+}
+/* cursor очиход өнгөө өөрчлөх */
+header .header-right nav>ul>li a:hover{
+    color: var(--title-red-color);
+}
+header .header-right nav>ul>li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--title-red-color);
+    transition: transform 0.25s ease-in;
+}
+header .header-right nav>ul>li>a:hover::after{
+    transform: scaleX(1);
+}
+#current {
+    color: var(--title-red-color);
+}
+/* navbar dropdown энэ хэсэгт энгийн үед display none байж байгаад cursor очиход flex colimn болоод бууна */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+.dropdown:hover .dropdown-content li {
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+    border-bottom: solid 1px var(--title-red-color05);
+}
+.dropdown .dropdown-content li:hover{
+    border-bottom: solid 1px var(--title-red-color);
+}
+
+/* navbar dropdown */
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+}
+/* logo хэсгээс 0,5s-д томсож орж ирнэ Энэ нь яг логоноос үг нь гарч ирж байгаам шиг */
+.logo h1 {
+    position: relative;
+    letter-spacing: 0.3rem;
+    width: 18rem;
+    animation:animateright 0.5s
+}
+@keyframes animateright{
+    from{right:100px;opacity:0; font-size: 5px;} to{right:0;opacity:1}}
+
