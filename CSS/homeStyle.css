@@ -1,6 +1,5 @@
 .homeBack {
   flex-direction: column;
-  animation: changeBackground 9s linear infinite;
 }
 
 .homeBack article {
@@ -37,41 +36,4 @@ letter-spacing: 0.4px;
 }
 .homeBack article img {
   width: 100%;
-}
-
-@keyframes changeBackground {
-  0%,
-  100% {
-    #backgroundImage1 {
-      opacity: 1;
-    }
-    #backgroundImage2 {
-      opacity: 0;
-    }
-    #backgroundImage3 {
-      opacity: 0;
-    }
-  }
-  33.33% {
-    #backgroundImage1 {
-      opacity: 0;
-    }
-    #backgroundImage2 {
-      opacity: 1;
-    }
-    #backgroundImage3 {
-      opacity: 0;
-    }
-  }
-  66.67% {
-    #backgroundImage1 {
-      opacity: 0;
-    }
-    #backgroundImage2 {
-      opacity: 0;
-    }
-    #backgroundImage3 {
-      opacity: 1;
-    }
-  }
 }
