@@ -215,6 +215,16 @@ header .header-right nav > ul > li > a:hover::after {
 /* home хэсгийн css (((((((((((((((((((((((((((((((*/
 /* home img хэсэг */
 
+
+
+/*.section */
+
+
+section {
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
 /* footer хэсэг */
 footer {
   margin-top: 5rem;
