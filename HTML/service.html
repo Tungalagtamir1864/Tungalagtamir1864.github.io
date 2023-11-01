@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mn">
 
 <head>
     <meta charset="UTF-8">
@@ -7,87 +7,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ЭНХТУН ГАЗРЫН ХИШИГ, ӨРӨМДЛӨГ, ӨРӨМДЛӨГИЙН">
     <title>ЭНХТУН ГАЗРЫН ХИШИГ ХХК</title>
-
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/sevise.css">
+    <script src="https://kit.fontawesome.com/fb1fcdd475.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital@1&display=swap" rel="stylesheet">
     <script>
         function toggleMobileMenu(menu) {
             menu.classList.toggle('open');
         }
     </script>
+
+
 </head>
 
 <body>
-
     <!-- nav хэсэг -->
     <header>
         <div class="logo">
-            <img src="/Picture/logo.png" alt="logo">
-            <h1 id="main-title">Дэлхийн жишигт нийцсэн,
-                Монгол бахархалыг бид олборлоно</h1>
+            <img src="/Picture/logo1.webp" alt="logo">
+            <h2 class="main-title">Дэлхийн жишигт нийцсэн,<br> Монгол бахархалыг бид олборлоно</h2>
         </div>
         <div class="header-right">
+            <div id="social">
+                <img src="/Picture/mongolianflag.webp" alt="mongolianflag">
+                <img src="/Picture/englishflag.webp" alt="englishflag">
+            </div>
             <nav>
                 <ul>
-                    <li><a href="/index.html" id="current">Нүүр</a></li>
+                    <li><a href="/index.html">Нүүр</a></li>
                     <li><a href="/HTML/service.html">Үйлчилгээ</a></li>
                     <li><a href="/HTML/aboutus.html">Бидний тухай</a></li>
                     <li><a href="/HTML/work.html">Ажлын байр</a></li>
                 </ul>
             </nav>
-            <div id="Language">
-                <img src="/Picture/mongolianflag.png" alt="mongolianflag">
-                <img src="/Picture/englishflag.png" alt="englishflag">
+            <div id="hamburger" onclick="toggleMobileMenu(this)">
+                <div class="bars">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div>
+                    <ul id="mobile-menu">
+                        <li><a href="/index.html" id="current">Нүүр</a></li>
+                        <li><a href="/HTML/service.html">Үйлчилгээ</a></li>
+                        <li><a href="/HTML/aboutus.html">Бидний тухай</a></li>
+                        <li><a href="/HTML/work.html">Ажлын байр</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
 
 
 
+    <!-- servise -->
 
-    <!-- home -->
-
-
+    <article class="header-img">
+        <h1>ҮЙЛЧИЛГЭЭ<h1>
+    </article>
     <section>
-        <h2>АШИГТ МАЛТМАЛЫН
+        <h2 class="mar-t-5 mar-b-2">АШИГТ МАЛТМАЛЫН
             ХАЙГУУЛЫН ӨРӨМДЛӨГ</h2>
-        <p> Өрөмдлөгийн ажлын үр дүнгээр ашигт малтмалын эдийн засгийн үр өгөөжтэй хэсгүүдийн байршлыг тодорхойлох
-            бөгөөд эрэл хайгуулын төлөвлөлт болон таамаглалын шатны хийсэн урьдчилсан мэдээ, таамгуудыг баталгаажуулдаг.
+        <p class="mar-t-2"> Өрөмдлөгийн ажлын үр дүнгээр ашигт малтмалын эдийн засгийн үр өгөөжтэй хэсгүүдийн байршлыг
+            тодорхойлох бөгөөд эрэл хайгуулын төлөвлөлт болон таамаглалын шатны хийсэн урьдчилсан мэдээ, таамгуудыг
+            баталгаажуулдаг.
             Өрөмдлөгийн ажлыг гүйцэтгэдэг олон төрлийн технологийн аргачлалууд байдаг ч ашигт малтмалын эрэл хайгуулын
             салбарт дараах гурван аргачлалуудыг түгээмэл хэрэглэж байна. Өрөмдлөгийн зардал өсөх дарааллаар шнекен
             өрөмдлөг, хийн цохилтот болон гулуузан дээжтэй өрөмдлөгийн аргуудыг ашиглан үйл ажиллагаагаа явуулж байна.
+        </p>
+        <p class="mar-t-2">
             Манай өрмийн баг хамт олон хамгийн хүнд хэцүү геологийн тогтоц бүхий газруудад хэрэглэгчийн шаардлагад
             нийцсэн өрөмдлөгийн үйлчилгээг үзүүлж, өөрийн өрөмдөх, дээж авах ур чадвар, туршлагын цар хүрээг харуулсан
             олон ажлыг амжилттай хийж гүйцэтгэж байна. Өрөмдлөг хийсэн ашигт малтмалын ордын төрлүүд:
         </p>
-        <div>
-            <img src="/Picture/зэс.png" alt="Зэс">
+        <div >
+            <img src="/Picture/1.webp" alt="Зэс">
             <p>Зэс</p>
         </div>
         <div>
-            <img src="/Picture/зэс.png" alt="Зэс">
+            <img src="/Picture/2.webp" alt="Зэс">
             <p>Зэс</p>
         </div>
         <div>
-            <img src="/Picture/зэс.png" alt="Зэс">
+            <img src="/Picture/3.webp" alt="Зэс">
             <p>Зэс</p>
         </div>
         <div>
-            <img src="/Picture/зэс.png" alt="Зэс">
+            <img src="/Picture/4.webp" alt="Зэс">
             <p>Зэс</p>
         </div>
         <div>
-            <img src="/Picture/зэс.png" alt="Зэс">
+            <img src="/Picture/5.webp" alt="Зэс">
             <p>Зэс</p>
         </div>
         <div>
-            <img src="/Picture/зэс.png" alt="Зэс">
+            <img src="/Picture/6.webp" alt="Зэс">
             <p>Зэс</p>
         </div>
         <div>
-            <img src="/Picture/зэс.png" alt="Зэс">
-            <p>Зэс</p>
-        </div>
-        <div>
-            <img src="/Picture/зэс.png" alt="Зэс">
+            <img src="/Picture/7.webp" alt="Зэс">
             <p>Зэс</p>
         </div>
     </section>
@@ -123,149 +150,403 @@
         </article>
     </section>
 
-    <section>
-        <h2>ТЕХНИКИЙН ХҮЧИН ЧАДАЛ</h2>
-        <article>
-            <h3>POWER 6000</h3>
-            <p>Өөрийн хүчин чадлаар: 200</p>
-            <p>
-                Нэмэлт booster-тэй: 400 </p>
-            <p> Компрессортой: 600
-            </p>
-            <p>Татах хүч: 16ТН </p>
-            <p>
-                Өрмийн толгойн даралт: 8тн</p>
-            <p>
-                Өрмийн толгой хурд: 1.4м/cек
-            </p>
-            <p> Өрмийн жин: 11тн </p>
-        </article>
-        <article>
-            <h3>POWER 6000</h3>
-            <p>Өөрийн хүчин чадлаар: 200</p>
-            <p>
-                Нэмэлт booster-тэй: 400 </p>
-            <p> Компрессортой: 600
-            </p>
-            <p>Татах хүч: 16ТН </p>
-            <p>
-                Өрмийн толгойн даралт: 8тн</p>
-            <p>
-                Өрмийн толгой хурд: 1.4м/cек
-            </p>
-            <p> Өрмийн жин: 11тн </p>
-        </article>
-        <article>
-            <h3>POWER 6000</h3>
-            <p>Өөрийн хүчин чадлаар: 200</p>
-            <p>
-                Нэмэлт booster-тэй: 400 </p>
-            <p> Компрессортой: 600
-            </p>
-            <p>Татах хүч: 16ТН </p>
-            <p>
-                Өрмийн толгойн даралт: 8тн</p>
-            <p>
-                Өрмийн толгой хурд: 1.4м/cек
-            </p>
-            <p> Өрмийн жин: 11тн </p>
-        </article>
-        <article>
-            <h3>POWER 6000</h3>
-            <p>Өөрийн хүчин чадлаар: 200</p>
-            <p>
-                Нэмэлт booster-тэй: 400 </p>
-            <p> Компрессортой: 600
-            </p>
-            <p>Татах хүч: 16ТН </p>
-            <p>
-                Өрмийн толгойн даралт: 8тн</p>
-            <p>
-                Өрмийн толгой хурд: 1.4м/cек
-            </p>
-            <p> Өрмийн жин: 11тн </p>
-        </article>
-        <article>
-            <h3>POWER 6000</h3>
-            <p>Өөрийн хүчин чадлаар: 200</p>
-            <p>
-                Нэмэлт booster-тэй: 400 </p>
-            <p> Компрессортой: 600
-            </p>
-            <p>Татах хүч: 16ТН </p>
-            <p>
-                Өрмийн толгойн даралт: 8тн</p>
-            <p>
-                Өрмийн толгой хурд: 1.4м/cек
-            </p>
-            <p> Өрмийн жин: 11тн </p>
-        </article>
-        <article>
-            <h3>POWER 6000</h3>
-            <p>Өөрийн хүчин чадлаар: 200</p>
-            <p>
-                Нэмэлт booster-тэй: 400 </p>
-            <p> Компрессортой: 600
-            </p>
-            <p>Татах хүч: 16ТН </p>
-            <p>
-                Өрмийн толгойн даралт: 8тн</p>
-            <p>
-                Өрмийн толгой хурд: 1.4м/cек
-            </p>
-            <p> Өрмийн жин: 11тн </p>
-        </article>
-        <article>
-            <h3>POWER 6000</h3>
-            <p>Өөрийн хүчин чадлаар: 200</p>
-            <p>
-                Нэмэлт booster-тэй: 400 </p>
-            <p> Компрессортой: 600
-            </p>
-            <p>Татах хүч: 16ТН </p>
-            <p>
-                Өрмийн толгойн даралт: 8тн</p>
-            <p>
-                Өрмийн толгой хурд: 1.4м/cек
-            </p>
-            <p> Өрмийн жин: 11тн </p>
-        </article>
-        <article>
-            <h3>POWER 6000</h3>
-            <p>Өөрийн хүчин чадлаар: 200</p>
-            <p>
-                Нэмэлт booster-тэй: 400 </p>
-            <p> Компрессортой: 600
-            </p>
-            <p>Татах хүч: 16ТН </p>
-            <p>
-                Өрмийн толгойн даралт: 8тн</p>
-            <p>
-                Өрмийн толгой хурд: 1.4м/cек
-            </p>
-            <p> Өрмийн жин: 11тн </p>
-        </article>
+    <section class="mar-t-5">
+        <h2 class="subtitle">Үйлчилгээ</h2>
+        <div class="serviceCon">
+            <article class="serviceItem">
+                <h2>Геологи-хайгуулын баганат эргэлтэт өрөмдлөг</h2>
+            </article>
+            <article class="serviceItem">
+                <h2>Геологи-хайгуулын баганат эргэлтэт өрөмдлөг</h2>
+            </article>
+            <article class="serviceItem">
+                <h2>Геологи-хайгуулын баганат эргэлтэт өрөмдлөг</h2>
+            </article>
+            <article class="serviceItem">
+                <h2>Геологи-хайгуулын баганат эргэлтэт өрөмдлөг</h2>
+            </article>
+            <article class="serviceItem">
+                <h2>Геологи-хайгуулын баганат эргэлтэт өрөмдлөг</h2>
+            </article>
+            <article class="serviceItem">
+                <h2>Геологи-хайгуулын баганат эргэлтэт өрөмдлөг</h2>
+            </article>
+        </div>
+    </section>
+    
+    <section class="texnic mar-t-5">
+        <h2 class="subtitle">ТЕХНИКИЙН ХҮЧИН ЧАДАЛ</h2>
+        <div class="texnicCon mar-t-2>
+            <article class="texnicItem">
+                <img src="/Picture/tohooromj1.webp" alt="">
+
+                <div class="hoverItem">
+                    <h3 class="t-center font-bold main-orange-text-color text-underline font-italic">POWER 6000</h3>
+                    <div class="textCon">
+                        <div class="textItem  font-italic">
+                            <p>Өөрийн хүчин чадлаар:</p>
+                            <p>Нэмэлт booster-тэй: </p>
+                            <p>Компрессортой:</p>
+                            <p>Татах хүч: </p>
+                            <p>Өрмийн толгойн даралт:</p>
+                            <p>Өрмийн толгой хурд:</p>
+                            <p>Өрмийн жин: </p>
+                        </div>
+                        <div class="textItem main-orange-text-color">
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+            <article class="texnicItem">
+                <img src="/Picture/tohooromj1.webp" alt="">
+
+                <div class="hoverItem">
+                    <h3 class="t-center font-bold main-orange-text-color text-underline font-italic">POWER 6000</h3>
+                    <div class="textCon">
+                        <div class="textItem  font-italic">
+                            <p>Өөрийн хүчин чадлаар:</p>
+                            <p>Нэмэлт booster-тэй: </p>
+                            <p>Компрессортой:</p>
+                            <p>Татах хүч: </p>
+                            <p>Өрмийн толгойн даралт:</p>
+                            <p>Өрмийн толгой хурд:</p>
+                            <p>Өрмийн жин: </p>
+                        </div>
+                        <div class="textItem main-orange-text-color">
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+            <article class="texnicItem">
+                <img src="/Picture/tohooromj1.webp" alt="">
+
+                <div class="hoverItem">
+                    <h3 class="t-center font-bold main-orange-text-color text-underline font-italic">POWER 6000</h3>
+                    <div class="textCon">
+                        <div class="textItem  font-italic">
+                            <p>Өөрийн хүчин чадлаар:</p>
+                            <p>Нэмэлт booster-тэй: </p>
+                            <p>Компрессортой:</p>
+                            <p>Татах хүч: </p>
+                            <p>Өрмийн толгойн даралт:</p>
+                            <p>Өрмийн толгой хурд:</p>
+                            <p>Өрмийн жин: </p>
+                        </div>
+                        <div class="textItem main-orange-text-color">
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+            <article class="texnicItem">
+                <img src="/Picture/tohooromj1.webp" alt="">
+
+                <div class="hoverItem">
+                    <h3 class="t-center font-bold main-orange-text-color text-underline font-italic">POWER 6000</h3>
+                    <div class="textCon">
+                        <div class="textItem  font-italic">
+                            <p>Өөрийн хүчин чадлаар:</p>
+                            <p>Нэмэлт booster-тэй: </p>
+                            <p>Компрессортой:</p>
+                            <p>Татах хүч: </p>
+                            <p>Өрмийн толгойн даралт:</p>
+                            <p>Өрмийн толгой хурд:</p>
+                            <p>Өрмийн жин: </p>
+                        </div>
+                        <div class="textItem main-orange-text-color">
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+            <article class="texnicItem">
+                <img src="/Picture/tohooromj1.webp" alt="">
+
+                <div class="hoverItem">
+                    <h3 class="t-center font-bold main-orange-text-color text-underline font-italic">POWER 6000</h3>
+                    <div class="textCon">
+                        <div class="textItem  font-italic">
+                            <p>Өөрийн хүчин чадлаар:</p>
+                            <p>Нэмэлт booster-тэй: </p>
+                            <p>Компрессортой:</p>
+                            <p>Татах хүч: </p>
+                            <p>Өрмийн толгойн даралт:</p>
+                            <p>Өрмийн толгой хурд:</p>
+                            <p>Өрмийн жин: </p>
+                        </div>
+                        <div class="textItem main-orange-text-color">
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+            <article class="texnicItem">
+                <img src="/Picture/tohooromj1.webp" alt="">
+
+                <div class="hoverItem">
+                    <h3 class="t-center font-bold main-orange-text-color text-underline font-italic">POWER 6000</h3>
+                    <div class="textCon">
+                        <div class="textItem  font-italic">
+                            <p>Өөрийн хүчин чадлаар:</p>
+                            <p>Нэмэлт booster-тэй: </p>
+                            <p>Компрессортой:</p>
+                            <p>Татах хүч: </p>
+                            <p>Өрмийн толгойн даралт:</p>
+                            <p>Өрмийн толгой хурд:</p>
+                            <p>Өрмийн жин: </p>
+                        </div>
+                        <div class="textItem main-orange-text-color">
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+            <article class="texnicItem">
+                <img src="/Picture/tohooromj1.webp" alt="">
+
+                <div class="hoverItem">
+                    <h3 class="t-center font-bold main-orange-text-color text-underline font-italic">POWER 6000</h3>
+                    <div class="textCon">
+                        <div class="textItem  font-italic">
+                            <p>Өөрийн хүчин чадлаар:</p>
+                            <p>Нэмэлт booster-тэй: </p>
+                            <p>Компрессортой:</p>
+                            <p>Татах хүч: </p>
+                            <p>Өрмийн толгойн даралт:</p>
+                            <p>Өрмийн толгой хурд:</p>
+                            <p>Өрмийн жин: </p>
+                        </div>
+                        <div class="textItem main-orange-text-color">
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+            <article class="texnicItem">
+                <img src="/Picture/tohooromj1.webp" alt="">
+
+                <div class="hoverItem">
+                    <h3 class="t-center font-bold main-orange-text-color text-underline font-italic">POWER 6000</h3>
+                    <div class="textCon">
+                        <div class="textItem  font-italic">
+                            <p>Өөрийн хүчин чадлаар:</p>
+                            <p>Нэмэлт booster-тэй: </p>
+                            <p>Компрессортой:</p>
+                            <p>Татах хүч: </p>
+                            <p>Өрмийн толгойн даралт:</p>
+                            <p>Өрмийн толгой хурд:</p>
+                            <p>Өрмийн жин: </p>
+                        </div>
+                        <div class="textItem main-orange-text-color">
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+            <article class="texnicItem">
+                <img src="/Picture/tohooromj1.webp" alt="">
+
+                <div class="hoverItem">
+                    <h3 class="t-center font-bold main-orange-text-color text-underline font-italic">POWER 6000</h3>
+                    <div class="textCon">
+                        <div class="textItem  font-italic">
+                            <p>Өөрийн хүчин чадлаар:</p>
+                            <p>Нэмэлт booster-тэй: </p>
+                            <p>Компрессортой:</p>
+                            <p>Татах хүч: </p>
+                            <p>Өрмийн толгойн даралт:</p>
+                            <p>Өрмийн толгой хурд:</p>
+                            <p>Өрмийн жин: </p>
+                        </div>
+                        <div class="textItem main-orange-text-color">
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+            <article class="texnicItem">
+                <img src="/Picture/tohooromj1.webp" alt="">
+
+                <div class="hoverItem">
+                    <h3 class="t-center font-bold main-orange-text-color text-underline font-italic">POWER 6000</h3>
+                    <div class="textCon">
+                        <div class="textItem  font-italic">
+                            <p>Өөрийн хүчин чадлаар:</p>
+                            <p>Нэмэлт booster-тэй: </p>
+                            <p>Компрессортой:</p>
+                            <p>Татах хүч: </p>
+                            <p>Өрмийн толгойн даралт:</p>
+                            <p>Өрмийн толгой хурд:</p>
+                            <p>Өрмийн жин: </p>
+                        </div>
+                        <div class="textItem main-orange-text-color">
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+            <article class="texnicItem">
+                <img src="/Picture/tohooromj1.webp" alt="">
+
+                <div class="hoverItem">
+                    <h3 class="t-center font-bold main-orange-text-color text-underline font-italic">POWER 6000</h3>
+                    <div class="textCon">
+                        <div class="textItem  font-italic">
+                            <p>Өөрийн хүчин чадлаар:</p>
+                            <p>Нэмэлт booster-тэй: </p>
+                            <p>Компрессортой:</p>
+                            <p>Татах хүч: </p>
+                            <p>Өрмийн толгойн даралт:</p>
+                            <p>Өрмийн толгой хурд:</p>
+                            <p>Өрмийн жин: </p>
+                        </div>
+                        <div class="textItem main-orange-text-color">
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+            <article class="texnicItem">
+                <img src="/Picture/tohooromj1.webp" alt="">
+
+                <div class="hoverItem">
+                    <h3 class="t-center font-bold main-orange-text-color text-underline font-italic">POWER 6000</h3>
+                    <div class="textCon">
+                        <div class="textItem  font-italic">
+                            <p>Өөрийн хүчин чадлаар:</p>
+                            <p>Нэмэлт booster-тэй: </p>
+                            <p>Компрессортой:</p>
+                            <p>Татах хүч: </p>
+                            <p>Өрмийн толгойн даралт:</p>
+                            <p>Өрмийн толгой хурд:</p>
+                            <p>Өрмийн жин: </p>
+                        </div>
+                        <div class="textItem main-orange-text-color">
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+        </div>
     </section>
 
-    <section>
-        <h3>Санал, хүсэлт</h3>
-        <form>
-            <input name="name" type="text" placeholder="Овог">
-            <input name="name" type="text" placeholder="Нэр">
-            <input name="email" type="email" placeholder="И-майл хаяг">
-            <input name="subject" type="text" placeholder="гарчиг">
-            <textarea name="comment" placeholder="Санал хүсэлт"></textarea>
-            <input type="submit" value="SUBMIT">
-        </form>
-    </section>
-    <section>
-        <h3>Холбоо, барих</h3>
-        <h4>location</h4>
-        <p><b>Head office: </b> Улаанбаатар хот, Чингэлтэй дүүрэг,1-р хороо </p>
-        <p><b>Phone: </b> +976 1135-4662 </p>
-        <p><b>Fax: </b>+976 1135-4663 </p>
-        <p><b>Email : </b>info@tourmongolia.com, </p>
-    </section>
+    <div class="req-add mar-t-2">
+        <section>
+            <h2 class="t-center">Бидэнд хүсэлтээ үлдээгээрэй</h2>
+            <h4 class="t-center">бид тантай эргэн холбогдох болно</h4>
+            <form class="mar-t-2">
+                <input name="name" type="text" placeholder="Name">
+                <input name="email" type="email" placeholder="Email">
+                <input name="subject" type="text" placeholder="subject">
+                <textarea name="comment" placeholder="Comment"></textarea>
+                <input type="submit" value="SUBMIT">
+            </form>
+        </section>
+        <section class="address">
+            <h2 class="t-center">Манай байгууллагын хаяг</h2>
+            <h4 class="t-center">location</h4>
+            <iframe class="mar-t-2"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2092.247577697846!2d106.927807!3d47.924373!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdefb960eccf2039a!2sTour%20Mongolia!5e1!3m2!1sen!2smn!4v1670701779679!5m2!1sen!2smn"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <address>
+                <p><span class="font-bold">Head office: </span> Erkhuu street, Macro Center Building 7/1, 5th
+                    floor,
+                    Suite 13, 7th khoroo, Sukhbaatar
+                    district, Ulaanbaatar 14190, Mongolia</p>
+                <p><span class="font-bold">Phone: </span> +976 1135-4662 </p>
+                <p><span class="font-bold">Fax: </span>+976 1135-4663 </p>
+                <p><span class="font-bold">Email : </span>info@tourmongolia.com, </p>
+            </address>
+        </section>
+    </div>
     <footer>
         <p>Copyright © ENKHTUN GAZRIIN KHISHIG LLC 2023. All Rights Reserved.</p>
     </footer>
