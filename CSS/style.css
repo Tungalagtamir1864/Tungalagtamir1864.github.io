@@ -11,6 +11,9 @@
 .font-bold{
     font-weight: bold;
 }
+.font-italic{
+  font-style: italic;
+}
 .t-center{
     text-align: center;
 }
@@ -20,6 +23,12 @@
 }
 .mar-t-5 {
     margin-top: 5rem;
+}
+.main-orange-text-color{
+  color:  #ff9900;
+}
+.text-underline{
+  text-decoration: underline;
 }
 * {
   margin: 0;
