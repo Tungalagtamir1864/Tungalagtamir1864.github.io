@@ -33,11 +33,17 @@
 .mar-b-5 {
   margin-bottom: 5rem;
 }
+.mar-b-1 {
+  margin-bottom: 1rem;
+}
 .mar-b-2{
   margin-top: 2rem;
 }
 .main-orange-text-color{
   color:  #ff9900;
+}
+.main-sub-text-color{
+  color:  #616161;
 }
 .border-rad{
   border-radius: 3%;
