@@ -24,6 +24,9 @@
 .mar-t-5 {
     margin-top: 5rem;
 }
+.mar-t-2{
+  margin-top: rem;
+}
 .mar-b-5 {
   margin-bottom: 5rem;
 }
@@ -356,3 +359,53 @@ section .subtitle{
 }
 @media (max-width: 580px) {
 }
+
+/*--------------------------------foooter*/
+
+
+
+.req-add{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 90vw;
+  margin: auto;
+  gap: 1rem 2rem;
+  height: auto;
+  justify-items: center;
+}
+.req-add section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.req-add section form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem 0;}
+
+  input[type=text], select, textarea, input[type=email]{
+    width: 100%;
+    padding: 8px;
+  }
+  
+input[type=submit] {
+  background-color: var(--title-orange-color);
+  color: white;
+  padding: 12px 50px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  text-align: center;
+
+}
+
+input[type=submit]:hover {
+color: var(--title-orange-color);
+border-color: #F90;
+border-width: 1px;
+  background-color: white;
+}
+.address p{
+    font-size: 0.7rem;
+}
+

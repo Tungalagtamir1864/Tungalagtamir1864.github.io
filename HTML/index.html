@@ -394,25 +394,36 @@
                 <h3>Хөдөлмөрийн тухай хууль</h3>
             </article>
         </section>
-        <section>
-            <h3 class="subtitle">Санал, хүсэлт</h3>
-            <form>
-                <input name="name" type="text" placeholder="Овог">
-                <input name="name" type="text" placeholder="Нэр">
-                <input name="email" type="email" placeholder="И-майл хаяг">
-                <input name="subject" type="text" placeholder="гарчиг">
-                <textarea name="comment" placeholder="Санал хүсэлт"></textarea>
-                <input type="submit" value="SUBMIT">
-            </form>
-        </section>
-        <section class="subtitle">
-            <h3>Холбоо, барих</h3>
-            <h4>location</h4>
-            <p><b>Head office: </b> Улаанбаатар хот, Чингэлтэй дүүрэг,1-р хороо </p>
-            <p><b>Phone: </b> +976 1135-4662 </p>
-            <p><b>Fax: </b>+976 1135-4663 </p>
-            <p><b>Email : </b>info@tourmongolia.com, </p>
-        </section>
+        <div class="req-add mar-t-2">
+            <section>
+                <h3 class="t-center">Leave us your request</h3>
+                <h4 class="t-center">and we will get back to you.</h4>
+                <form class="mar-t-2">
+                    <input name="name" type="text" placeholder="Name">
+                    <input name="email" type="email" placeholder="Email">
+                    <input name="subject" type="text" placeholder="subject">
+                    <textarea name="comment" placeholder="Comment"></textarea>
+                    <input type="submit" value="SUBMIT">
+                </form>
+            </section>
+            <section class="address">
+                <h3 class="t-center">Address of our organization</h3>
+                <h4 class="t-center">location</h4>
+                <iframe class="mar-t-2"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2092.247577697846!2d106.927807!3d47.924373!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdefb960eccf2039a!2sTour%20Mongolia!5e1!3m2!1sen!2smn!4v1670701779679!5m2!1sen!2smn"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <address>
+                    <p><span class="font-bold">Head office: </span> Erkhuu street, Macro Center Building 7/1, 5th
+                        floor,
+                        Suite 13, 7th khoroo, Sukhbaatar
+                        district, Ulaanbaatar 14190, Mongolia</p>
+                    <p><span class="font-bold">Phone: </span> +976 1135-4662 </p>
+                    <p><span class="font-bold">Fax: </span>+976 1135-4663 </p>
+                    <p><span class="font-bold">Email : </span>info@tourmongolia.com, </p>
+                </address>
+            </section>
+        </div>
         <footer>
             <p>Copyright © ENKHTUN GAZRIIN KHISHIG LLC 2023. All Rights Reserved.</p>
         </footer>
@@ -431,37 +442,7 @@
         if (myIndex > x.length) { myIndex = 1 }
         x[myIndex - 1].style.display = "block";
         setTimeout(carousel, 4000);
-
-
-
     }
-
-    $(document).ready(function () {
-  $(".customer-logos").slick({
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    arrows: false,
-    dots: false,
-    pauseOnHover: false,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 4
-        }
-      },
-      {
-        breakpoint: 520,
-        settings: {
-          slidesToShow: 3
-        }
-      }
-    ]
-  });
-});
-
 </script>
 
 </html>
