@@ -367,7 +367,7 @@ section .subtitle{
 .req-add{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 90vw;
+  width: 80vw;
   margin: auto;
   gap: 1rem 2rem;
   height: auto;
