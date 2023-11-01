@@ -187,10 +187,10 @@ header .header-right nav > ul > li > a:hover::after {
   font-family: 'Philosopher', sans-serif;
   margin-left: 25px;
   font-style: italic;
-  font-size: 20px;
+  font-size: 15px;
   display: flex;
   line-height: 20px;
-  font-weight: 300;
+  font-weight: 500;
   color: #F90;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
@@ -286,8 +286,9 @@ section .subtitle{
 .main-button{
   background: var(--title-orange-color);
   color: #FFF;
-  font-size: 18px;
+  font-size: 15px;
   padding: 1%;
+  font-weight: 300;
 }
 
 @media (max-width: 1100px) {
@@ -341,7 +342,7 @@ section .subtitle{
   }
 
   .main-title {
-    font-size: 18px;
+    font-size: 15px;
   }
   .logo img {
     width: 4rem;
