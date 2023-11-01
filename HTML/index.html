@@ -17,11 +17,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@1,400;1,500&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital@1&display=swap" rel="stylesheet">
     <script>
         function toggleMobileMenu(menu) {
             menu.classList.toggle('open');
         }
     </script>
+
 
 </head>
 
@@ -68,45 +72,47 @@
 
     <!-- home -->
     <div class="homeBack">
-        <article id="backgroundImage1">
+        <article class="slider-main" id="backgroundImage1">
             <img src="/Picture/home1.webp" alt="ЭНХТУН ГАЗРЫН ХИШИГ">
-            <div>
-                <h2 class="i-center">Дэлхийн жишиг монгол бахархал</h2>
+            <div class="slider-info">
+                <h2 class="i-center mar-b-5">Дэлхийн жишиг монгол бахархал</h2>
                 <p class="mar-t-5"> Бид, тогтвортой хөгжил, хариуцлагатай уул уурхайг эрхэмлэн үндэсний баялгийг
                     бүтээнэ.
                 </p>
             </div>
         </article>
 
-        <article id="backgroundImage2">
+        <article class="slider-main" id="backgroundImage2">
             <img src="/Picture/home2.webp" alt="ЭНХТУН ГАЗРЫН ХИШИГ">
 
-            <div>
+            <div class="slider-info">
                 <h2>АШИГТ МАЛТМАЛЫН ХАЙГУУЛЫН ӨРӨМДЛӨГ</h2>
-                <p class="mar-t-5"> Бид, дэлхийн жишгийг монголд нэврүүлэн ажиллаж байна.</p><a
-                    href="safe.html">Дэлгэрэнгүй</a>
+                <p class="mar-t-5 mar-b-5"> Бид, дэлхийн жишгийг монголд нэврүүлэн ажиллаж байна.</p>
+                <a href="safe.html" class="main-button mar-t-5">Дэлгэрэнгүй</a>
             </div>
 
 
         </article>
-        <article id="backgroundImage3">
+        <article class="slider-main" id="backgroundImage3">
             <img src="/Picture/home1.webp" alt="ЭНХТУН ГАЗРЫН ХИШИГ">
-            <div>
+            <div class="slider-info">
                 <h2>Нэн тэргүүнд хөдөлмөрийн аюулгүй байдал</h2>
 
-                <p class="mar-t-5"> 5А зарчим<br>
+                <p class="mar-t-5 mar-b-5"> 5А зарчим<br>
 
                     Аюулгүй ажиллагаанд СУРАЛЦАХ<br>
                     Алжаалаа тайлж бие сэтгэлээ АЖИЛД БЭЛДЭХ<br>
                     Ажил эхлэхээс өмнө ЗӨВ АЖИЛЛАХ ТУХАЙ БОДОХ<br>
                     Аюул эрсдэлийг ИЛРҮҮЛЖ АРИЛГАХ<br>
-                    Ажлаа ЗӨВ ГҮЙЦЭТГЭХ</p><a href="#">Дэлгэрэнгүй</a>
+                    Ажлаа ЗӨВ ГҮЙЦЭТГЭХ</p>
+                <a href="#" class="main-button mar-t-5 ">Дэлгэрэнгүй</a>
             </div>
 
 
         </article>
     </div>
-    <div class="about">
+
+    <div class="about mar-t-5">
         <article class="griditem">
             <img src="/Picture/abaut_logo1.webp" alt="ЭНХТУН ГАЗРЫН ХИШИГ">
             <h2>БИДНИЙ ТУХАЙ</h2>
@@ -181,7 +187,6 @@
 
 
     <section class="project_map mar-t-5">
-
         <h2 class="subtitle">ТӨСЛИЙН БАЙРШИЛ</h2>
         <div>
             <img src="/Picture/mongoliaMap.webp" alt="газрын зураг">
@@ -196,88 +201,267 @@
 
                 <div class="hoverItem">
                     <h3 class="t-center font-bold main-orange-text-color text-underline font-italic">POWER 6000</h3>
-                    <div class="textCon">                    
+                    <div class="textCon">
                         <div class="textItem  font-italic">
-                        <p>Өөрийн хүчин чадлаар:</p>
-                        <p>Нэмэлт booster-тэй: </p>
-                        <p>Компрессортой:</p>
-                        <p>Татах хүч: </p>
-                        <p>Өрмийн толгойн даралт:</p>
-                        <p>Өрмийн толгой хурд:</p>
-                        <p>Өрмийн жин: </p>
+                            <p>Өөрийн хүчин чадлаар:</p>
+                            <p>Нэмэлт booster-тэй: </p>
+                            <p>Компрессортой:</p>
+                            <p>Татах хүч: </p>
+                            <p>Өрмийн толгойн даралт:</p>
+                            <p>Өрмийн толгой хурд:</p>
+                            <p>Өрмийн жин: </p>
+                        </div>
+                        <div class="textItem main-orange-text-color">
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                        </div>
                     </div>
-                    <div class="textItem main-orange-text-color">
-                        <p>200м</p>
-                        <p>200м</p>
-                        <p>200м</p>
-                        <p>200м</p>
-                        <p>200м</p>
-                        <p>200м</p>
-                        <p>200м</p>
-                    </div>
+
                 </div>
+            </article>
+            <article class="texnicItem">
+                <img src="/Picture/tohooromj1.webp" alt="">
+
+                <div class="hoverItem">
+                    <h3 class="t-center font-bold main-orange-text-color text-underline font-italic">POWER 6000</h3>
+                    <div class="textCon">
+                        <div class="textItem  font-italic">
+                            <p>Өөрийн хүчин чадлаар:</p>
+                            <p>Нэмэлт booster-тэй: </p>
+                            <p>Компрессортой:</p>
+                            <p>Татах хүч: </p>
+                            <p>Өрмийн толгойн даралт:</p>
+                            <p>Өрмийн толгой хурд:</p>
+                            <p>Өрмийн жин: </p>
+                        </div>
+                        <div class="textItem main-orange-text-color">
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+            <article class="texnicItem">
+                <img src="/Picture/tohooromj1.webp" alt="">
+
+                <div class="hoverItem">
+                    <h3 class="t-center font-bold main-orange-text-color text-underline font-italic">POWER 6000</h3>
+                    <div class="textCon">
+                        <div class="textItem  font-italic">
+                            <p>Өөрийн хүчин чадлаар:</p>
+                            <p>Нэмэлт booster-тэй: </p>
+                            <p>Компрессортой:</p>
+                            <p>Татах хүч: </p>
+                            <p>Өрмийн толгойн даралт:</p>
+                            <p>Өрмийн толгой хурд:</p>
+                            <p>Өрмийн жин: </p>
+                        </div>
+                        <div class="textItem main-orange-text-color">
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+            <article class="texnicItem">
+                <img src="/Picture/tohooromj1.webp" alt="">
+
+                <div class="hoverItem">
+                    <h3 class="t-center font-bold main-orange-text-color text-underline font-italic">POWER 6000</h3>
+                    <div class="textCon">
+                        <div class="textItem  font-italic">
+                            <p>Өөрийн хүчин чадлаар:</p>
+                            <p>Нэмэлт booster-тэй: </p>
+                            <p>Компрессортой:</p>
+                            <p>Татах хүч: </p>
+                            <p>Өрмийн толгойн даралт:</p>
+                            <p>Өрмийн толгой хурд:</p>
+                            <p>Өрмийн жин: </p>
+                        </div>
+                        <div class="textItem main-orange-text-color">
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+            <article class="texnicItem">
+                <img src="/Picture/tohooromj1.webp" alt="">
+
+                <div class="hoverItem">
+                    <h3 class="t-center font-bold main-orange-text-color text-underline font-italic">POWER 6000</h3>
+                    <div class="textCon">
+                        <div class="textItem  font-italic">
+                            <p>Өөрийн хүчин чадлаар:</p>
+                            <p>Нэмэлт booster-тэй: </p>
+                            <p>Компрессортой:</p>
+                            <p>Татах хүч: </p>
+                            <p>Өрмийн толгойн даралт:</p>
+                            <p>Өрмийн толгой хурд:</p>
+                            <p>Өрмийн жин: </p>
+                        </div>
+                        <div class="textItem main-orange-text-color">
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                            <p>200м</p>
+                        </div>
+                    </div>
 
                 </div>
             </article>
         </div>
     </section>
-    
+
     <section>
         <h2 class="subtitle">ТҮНШ БАЙГУУЛЛАГУУД</h2>
-        <img src="/Picture/tunsh.webp" alt="mongolia_img">
+        <article class="customer-logos slider">
+            <div class="slide"><img src="https://mydio.in/assets/logo/dio.svg">
+            </div>
 
-        <img src="/Picture/tunsh.webp" alt="mongolia_img">
-    </section>
+            <div class="slide"><img src="https://mydio.in/assets/logo/dio.svg">
+            </div>
 
-    <section>
-        <h2 class="subtitle">АЖИЛД УРЬЖ БАЙНА.</h2>
-        <p>3</p>
-        <p>нээлттэй ажлын байр</p>
-        <a href="works.html">бүх ажлын зар</a>
-        <img src="/Picture/iconsengineer.webp" alt="mongolia_img">
-    </section>
+            <div class="slide"><img src="https://mydio.in/assets/logo/dio.svg">
+            </div>
 
-    <section>
-        <h2 class="subtitle">ДҮРЭМ ЖУРАМ</h2>
-        <article>
-            <img src="/Picture/lawicon.webp" alt="law">
-            <h3>Хөдөлмөрийн тухай хууль</h3>
+            <div class="slide"><img src="https://mydio.in/assets/logo/dio.svg">
+            </div>
+
+            <div class="slide"><img src="https://mydio.in/assets/logo/dio.svg">
+            </div>
+
+            <div class="slide"><img src="https://mydio.in/assets/logo/dio.svg">
+            </div>
+
+            <div class="slide"><img src="https://mydio.in/assets/logo/dio.svg">
+            </div>
+
+            <div class="slide"><img src="https://mydio.in/assets/logo/dio.svg">
+            </div>
         </article>
-        <article>
-            <img src="/Picture/lawicon.webp" alt="law">
-            <h3>Хөдөлмөрийн тухай хууль</h3>
-        </article>
-        <article>
-            <img src="/Picture/lawicon.webp" alt="law">
-            <h3>Хөдөлмөрийн тухай хууль</h3>
-        </article>
-        <article>
-            <img src="/Picture/lawicon.webp" alt="law">
-            <h3>Хөдөлмөрийн тухай хууль</h3>
-        </article>
-    </section>
-    <section>
-        <h3 class="subtitle">Санал, хүсэлт</h3>
-        <form>
-            <input name="name" type="text" placeholder="Овог">
-            <input name="name" type="text" placeholder="Нэр">
-            <input name="email" type="email" placeholder="И-майл хаяг">
-            <input name="subject" type="text" placeholder="гарчиг">
-            <textarea name="comment" placeholder="Санал хүсэлт"></textarea>
-            <input type="submit" value="SUBMIT">
-        </form>
-    </section>
-    <section class="subtitle">
-        <h3>Холбоо, барих</h3>
-        <h4>location</h4>
-        <p><b>Head office: </b> Улаанбаатар хот, Чингэлтэй дүүрэг,1-р хороо </p>
-        <p><b>Phone: </b> +976 1135-4662 </p>
-        <p><b>Fax: </b>+976 1135-4663 </p>
-        <p><b>Email : </b>info@tourmongolia.com, </p>
-    </section>
-    <footer>
-        <p>Copyright © ENKHTUN GAZRIIN KHISHIG LLC 2023. All Rights Reserved.</p>
-    </footer>
+
+        <section>
+            <h2 class="subtitle">АЖИЛД УРЬЖ БАЙНА.</h2>
+            <p>3</p>
+            <p>нээлттэй ажлын байр</p>
+            <a href="works.html">бүх ажлын зар</a>
+            <img src="/Picture/iconsengineer.webp" alt="mongolia_img">
+        </section>
+
+        <section>
+            <h2 class="subtitle">ДҮРЭМ ЖУРАМ</h2>
+            <article>
+                <img src="/Picture/lawicon.webp" alt="law">
+                <h3>Хөдөлмөрийн тухай хууль</h3>
+            </article>
+            <article>
+                <img src="/Picture/lawicon.webp" alt="law">
+                <h3>Хөдөлмөрийн тухай хууль</h3>
+            </article>
+            <article>
+                <img src="/Picture/lawicon.webp" alt="law">
+                <h3>Хөдөлмөрийн тухай хууль</h3>
+            </article>
+            <article>
+                <img src="/Picture/lawicon.webp" alt="law">
+                <h3>Хөдөлмөрийн тухай хууль</h3>
+            </article>
+        </section>
+        <section>
+            <h3 class="subtitle">Санал, хүсэлт</h3>
+            <form>
+                <input name="name" type="text" placeholder="Овог">
+                <input name="name" type="text" placeholder="Нэр">
+                <input name="email" type="email" placeholder="И-майл хаяг">
+                <input name="subject" type="text" placeholder="гарчиг">
+                <textarea name="comment" placeholder="Санал хүсэлт"></textarea>
+                <input type="submit" value="SUBMIT">
+            </form>
+        </section>
+        <section class="subtitle">
+            <h3>Холбоо, барих</h3>
+            <h4>location</h4>
+            <p><b>Head office: </b> Улаанбаатар хот, Чингэлтэй дүүрэг,1-р хороо </p>
+            <p><b>Phone: </b> +976 1135-4662 </p>
+            <p><b>Fax: </b>+976 1135-4663 </p>
+            <p><b>Email : </b>info@tourmongolia.com, </p>
+        </section>
+        <footer>
+            <p>Copyright © ENKHTUN GAZRIIN KHISHIG LLC 2023. All Rights Reserved.</p>
+        </footer>
 </body>
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("slider-main");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 4000);
+
+
+
+    }
+
+    $(document).ready(function () {
+  $(".customer-logos").slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    arrows: false,
+    dots: false,
+    pauseOnHover: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4
+        }
+      },
+      {
+        breakpoint: 520,
+        settings: {
+          slidesToShow: 3
+        }
+      }
+    ]
+  });
+});
+
+</script>
 
 </html>

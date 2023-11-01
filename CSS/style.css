@@ -24,8 +24,14 @@
 .mar-t-5 {
     margin-top: 5rem;
 }
+.mar-b-5 {
+  margin-bottom: 5rem;
+}
 .main-orange-text-color{
   color:  #ff9900;
+}
+.border-rad{
+  border-radius: 3%;
 }
 .text-underline{
   text-decoration: underline;
@@ -145,7 +151,6 @@ header .header-right nav > ul > li > a:hover::after {
 .logo h2 {
   position: relative;
   letter-spacing: 0.3rem;
-  width: 18rem;
   animation: animateright 0.5s;
 }
 @keyframes animateright {
@@ -173,13 +178,19 @@ header .header-right nav > ul > li > a:hover::after {
   height: auto;
 }
 .main-title {
-  font-family: "Brygada 1918", serif;
-  letter-spacing: 0px;
+  font-family: 'Philosopher', sans-serif;
+  margin-left: 25px;
   font-style: italic;
-  font-size: 10px;
+  font-size: 20px;
   display: flex;
   line-height: 20px;
   font-weight: 300;
+  color: #F90;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+font-weight: 400;
+line-height: 20px; /* 100% */
+letter-spacing: 1.2px;
   justify-content: center;
 
   color: var(--title-orange-color);
@@ -266,7 +277,12 @@ section .subtitle{
   line-height: 23px; /* 115% */
   letter-spacing: 1.2px;
 }
-
+.main-button{
+  background: var(--title-orange-color);
+  color: #FFF;
+  font-size: 18px;
+  padding: 1%;
+}
 
 @media (max-width: 1100px) {
   /* menu hamburger */
