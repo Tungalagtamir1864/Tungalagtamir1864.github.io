@@ -174,8 +174,42 @@
 
 /*project_map*/
 
-.project_map {
+.project_map div {
     display: flex;
     justify-content: center;
 }
 
+/*texnicCon*/
+
+
+.texnicCon{
+    display: grid;
+    width: 80vw;
+    margin: auto;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 3rem;
+}
+
+.hoverItem{
+    background-color: rgba(0, 0, 0, 0.60);
+    position: relative;
+    z-index: 5;
+    font-size: 15px;
+    margin: -500px;
+}
+.textCon{
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5%;
+}
+
+
+.texnicItem:hover .hoverItem {
+    
+    display: block;
+
+}
+.hoverItem {
+    display: none;
+}
