@@ -24,22 +24,13 @@
   line-height: 32px;
   letter-spacing: 1.15px;
   background-color: #ff9900;
+  margin-bottom: 9px;
 }
 .homeBack .slider-info p {
   padding-left: 3%;
   padding: 2%;
-  background: linear-gradient(
-      90deg,
-      rgba(21, 21, 21, 0.05) 2.6%,
-      rgba(34, 34, 34, 0.2) 51.56%,
-      rgba(0, 0, 0, 0) 100%
-    ),
-    linear-gradient(
-      180deg,
-      rgba(57, 57, 57, 0.67) 0%,
-      #323232 51.81%,
-      rgba(57, 57, 57, 0.4) 100%
-    );
+  margin-bottom: 9px;
+  background: rgba(0, 0, 0, 0.60);
   color: #fff;
   font-size: 15px;
   font-weight: 400;
@@ -48,7 +39,7 @@
   width: 100%;
   display: block;
   height: auto;
-  -webkit-filter: grayscale(50%);
+  filter: brightness(80%);
 }
 .slider-info {
   position: absolute;
@@ -71,10 +62,13 @@
 @media (max-width: 760px) {
   .about {
     grid-template-columns: repeat(2, 1fr);
+    grid-column: 2;
+  
   }
 
   .statisticCon {
     grid-template-columns: repeat(2, 1fr);
+    grid-column: 2;
   }
 }
 
@@ -114,7 +108,8 @@
   align-items: center;
   border-radius: 4px;
   background: #fff;
-  box-shadow: 0px 1px 2px 0.5px rgba(0, 0, 0, 0.25);
+  border-radius: 4.474px;
+  border: 0.2px solid #E5E5E5;
   padding: 6%;
 }
 .griditem p {
@@ -128,7 +123,6 @@
   color: #1d1d1d;
   text-align: center;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
 }
 .griditem a {
@@ -144,7 +138,8 @@
   display: grid;
   align-items: center;
   margin-top: 5rem;
-  background: url("/Picture/home1.webp"), lightgray 50% / cover no-repeat;
+  background: url("/Picture/home3.webp"), lightgray 50% / cover no-repeat;
+  filter: brightness(80%);
   width: 100%;
   height: 250px;
   gap: 2rem;
@@ -211,7 +206,7 @@
   color: #5c5c5c;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
   text-align: center;
-  font-size: 13px;
+  font-size: 15px;
 }
 .serviceItem:hover {
   background-color: #ff9900;
@@ -222,8 +217,13 @@
 .project_map div {
   display: grid;
   justify-content: center;
+  width: 80%;
 }
-
+.project_map div img{
+  display: grid;
+  justify-content: center;
+  width: 100%;
+}
 /*texnicCon*/
 
 .texnicCon {

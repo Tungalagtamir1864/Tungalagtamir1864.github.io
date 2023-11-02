@@ -8,26 +8,26 @@
   --check-green: #00ff00;
 }
 
-.font-bold{
-    font-weight: bold;
+.font-bold {
+  font-weight: bold;
 }
-.font-italic{
+.font-italic {
   font-style: italic;
 }
-.t-center{
-    text-align: center;
+.t-center {
+  text-align: center;
 }
 
-.i-center{
-    align-items: center;
+.i-center {
+  align-items: center;
 }
 .mar-t-5 {
-    margin-top: 5rem;
+  margin-top: 5rem;
 }
-.mar-t-2{
+.mar-t-2 {
   margin-top: 2rem;
 }
-.mar-t-1{
+.mar-t-1 {
   margin-top: 1rem;
 }
 .mar-b-5 {
@@ -36,19 +36,19 @@
 .mar-b-1 {
   margin-bottom: 1rem;
 }
-.mar-b-2{
+.mar-b-2 {
   margin-top: 2rem;
 }
-.main-orange-text-color{
-  color:  #ff9900;
+.main-orange-text-color {
+  color: #ff9900;
 }
-.main-sub-text-color{
-  color:  #616161;
+.main-sub-text-color {
+  color: #616161;
 }
-.border-rad{
+.border-rad {
   border-radius: 3%;
 }
-.text-underline{
+.text-underline {
   text-decoration: underline;
 }
 * {
@@ -102,10 +102,10 @@ header .header-right nav > ul > li {
 }
 /* inlineblock болон realitive болгосноор hover underline effect зөв ажиллана. */
 header .header-right nav > ul > li a {
-    font-weight: 400;
-    color: var(--nav-saaral-color);
-    display: inline-block;
-    position: relative;
+  font-weight: 400;
+  color: var(--nav-saaral-color);
+  display: inline-block;
+  position: relative;
 }
 /* cursor очиход өнгөө өөрчлөх */
 header .header-right nav > ul > li a:hover {
@@ -193,19 +193,19 @@ header .header-right nav > ul > li > a:hover::after {
   height: auto;
 }
 .main-title {
-  font-family: 'Philosopher', sans-serif;
+  font-family: "Philosopher", sans-serif;
   margin-left: 25px;
   font-style: italic;
   font-size: 15px;
   display: flex;
   line-height: 20px;
   font-weight: 500;
-  color: #F90;
+  color: #f90;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-font-weight: 400;
-line-height: 20px; /* 100% */
-letter-spacing: 1.2px;
+  font-weight: 400;
+  line-height: 20px; /* 100% */
+  letter-spacing: 1.2px;
   justify-content: center;
 
   color: var(--title-orange-color);
@@ -263,14 +263,11 @@ letter-spacing: 1.2px;
 /* home хэсгийн css (((((((((((((((((((((((((((((((*/
 /* home img хэсэг */
 
-
-
 /*.section */
 
-
 section {
-    padding-left: 8%;
-    padding-right: 8%;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 /* footer хэсэг */
@@ -281,20 +278,37 @@ footer {
   color: rgba(255, 255, 255, 0.75);
   padding: 2rem;
 }
-
-
-section .subtitle{
+section  .titleDes {
+  display: flex;
+  position: relative;
+  margin-bottom: 50px;
+}
+section  .titleDes .subtitle {
+  position: absolute;
   color: rgb(51, 51, 51);
   text-align: justify;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 23px; /* 115% */
-  letter-spacing: 1.2px;
+  line-height: 23px;
+  letter-spacing: 2px;
 }
-.main-button{
+
+section div .subtitle::after {
+  content: '';
+    position: absolute;
+    left: 80%;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid var(--title-orange-color);
+    clear: both;
+}
+.main-button {
   background: var(--title-orange-color);
-  color: #FFF;
+  color: #fff;
   font-size: 15px;
   padding: 1%;
   font-weight: 300;
@@ -375,9 +389,7 @@ section .subtitle{
 
 /*--------------------------------foooter*/
 
-
-
-.req-add{
+.req-add {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 80vw;
@@ -386,7 +398,7 @@ section .subtitle{
   height: auto;
   justify-items: center;
 }
-.req-add section{
+.req-add section {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -394,14 +406,18 @@ section .subtitle{
 .req-add section form {
   display: flex;
   flex-direction: column;
-  gap: 2rem 0;}
+  gap: 2rem 0;
+}
 
-  input[type=text], select, textarea, input[type=email]{
-    width: 100%;
-    padding: 8px;
-  }
-  
-input[type=submit] {
+input[type="text"],
+select,
+textarea,
+input[type="email"] {
+  width: 100%;
+  padding: 8px;
+}
+
+input[type="submit"] {
   background-color: var(--title-orange-color);
   color: white;
   padding: 12px 50px;
@@ -409,16 +425,14 @@ input[type=submit] {
   border-radius: 7px;
   cursor: pointer;
   text-align: center;
-
 }
 
-input[type=submit]:hover {
-color: var(--title-orange-color);
-border-color: #F90;
-border-width: 1px;
+input[type="submit"]:hover {
+  color: var(--title-orange-color);
+  border-color: #f90;
+  border-width: 1px;
   background-color: white;
 }
-.address p{
-    font-size: 0.7rem;
+.address p {
+  font-size: 0.7rem;
 }
-
