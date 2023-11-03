@@ -138,9 +138,7 @@
   font-size: 14px;
   font-weight: 300;
 }
-.griditem:hover{
-  scale: 1.1;
-}
+
 .griditem a:hover {
   background-color: #ff9900;
   color: #fff;
@@ -228,16 +226,13 @@
 
 /*project_map*/
 
-.project_map div {
-  display: grid;
+.project_map img{
+  display: flex;
   justify-content: center;
-  width: 80%;
 }
-.project_map div img{
-  display: grid;
-  justify-content: center;
-  width: 100%;
-}
+
+
+
 /*texnicCon*/
 
 .texnicCon {
@@ -245,17 +240,20 @@
   width: 80vw;
   margin: auto;
   grid-template-columns: repeat(6, 1fr);
-  margin-top: 3rem;
   gap: 1rem;
 }
 
 .texnicItem {
   position: relative;
+  
 }
 .texnicItem img {
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 3px;
+  position: relative;
+  z-index: -5;
 }
 .hoverItem {
   position: absolute;
@@ -266,16 +264,17 @@
   overflow: hidden;
   width: 100%;
   height: 0;
-  font-size: 8px;
   z-index: 5;
   transition: 1s ease;
+  
 }
 
 .texnicItem:hover {
-  scale: 1.2;
+  scale: 1.3;
 }
 .texnicItem:hover .hoverItem {
   height: 100%;
+  z-index: 11111;
 }
 
 .hoverItem {
@@ -285,13 +284,28 @@
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   color: #fff;
+  border-radius: 3px;
+  font-size: 12px;
 }
-.textItem p {
+
+.textitem{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.textCon h3 {
+  text-align: center;
+  font-size: 13px;
+}
+.textCon .textitem .starttext{
   text-align: start;
+  padding-left: 4px;
 }
+.textCon .textitem .endtext{
+  text-align: end;
+  padding-right: 4px;
+}
+
 
 /*-------------------------------slide---------------*/
 
