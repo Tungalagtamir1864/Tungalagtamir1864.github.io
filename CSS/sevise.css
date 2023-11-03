@@ -24,6 +24,10 @@
   border-bottom: 0.5px solid #A8A8A8;
   
 }
+.btn:hover{
+  border-bottom: 2px solid #ff9900;   
+  color: #ff9900; 
+}
 .btn:not(:last-child) {
   border-right: 0.2px solid #e4e4e4;
 }
