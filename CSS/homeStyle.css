@@ -138,6 +138,9 @@
   font-size: 14px;
   font-weight: 300;
 }
+.griditem:hover{
+  scale: 1.1;
+}
 .griditem a:hover {
   background-color: #ff9900;
   color: #fff;
