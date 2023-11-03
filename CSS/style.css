@@ -1,8 +1,8 @@
 :root {
   --title-orange-color: #ff9900;
   --nav-saaral-color: #5c5c5c;
-  --section-line-color:#cacaca;
-  --section-title-color:#2f2f2f;
+  --section-line-color: #cacaca;
+  --section-title-color: #2f2f2f;
   --footer-bg-color: #dbdbdb;
   --main-bg-color: #f0f0f0;
   --title-orange-color05: #90290a34;
@@ -66,7 +66,8 @@ a {
   color: var(--nav-saaral-color);
 }
 body {
-  font-family: "Manrope", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  
 
   line-height: 1.5rem;
   /* body хэсэгт орж ирэх бүх font-ийг Roboto Slab болгох хэрвээ тэр уншиигдххгүй бол serif болох*/
@@ -115,6 +116,7 @@ header .header-right nav > ul > li a:hover {
   color: var(--title-orange-color);
   font-weight: 700;
 }
+
 header .header-right nav > ul > li a::after {
   content: "";
   position: absolute;
@@ -265,11 +267,6 @@ header .header-right nav > ul > li > a:hover::after {
 /* home хэсгийн css (((((((((((((((((((((((((((((((*/
 /* home img хэсэг */
 
-/*.section */
-
-section {
-}
-
 /* footer хэсэг */
 footer {
   margin-top: 5rem;
@@ -278,9 +275,11 @@ footer {
   color: rgba(255, 255, 255, 0.75);
   padding: 2rem;
 }
-section{
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+/*.section */
+
+section {
+  margin-bottom: 4rem;
+  margin-top: 4rem;
   padding-left: 8%;
   padding-right: 8%;
 }
@@ -298,7 +297,18 @@ section .titleDes .subtitle {
   letter-spacing: 3px;
 }
 
-
+/*zuragtai garchignuud*/
+.header-img {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  display: flex;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 /* гурвалжин  
 section div .subtitle::after {
   content: "";

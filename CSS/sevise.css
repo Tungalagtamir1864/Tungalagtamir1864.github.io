@@ -4,6 +4,33 @@
     height: 50vh;
 }
 
+
+
+
+
+/*buttonfilter*/
+.buttonfilter{
+  display: grid;
+  width: 80vw;
+  margin: auto;
+  grid-template-columns: repeat(7, 1fr);
+}
+.btn{
+  color: #616161;
+  font-size: medium;
+  border-color: #5c5c5c00;
+  height: 60px;
+  background-color: #fff;
+  border-bottom: 0.5px solid #A8A8A8;
+  
+}
+.btn:not(:last-child) {
+  border-right: 0.2px solid #e4e4e4;
+}
+.btn:focus {     
+  border-bottom: 2px solid #ff9900;   
+  color: #ff9900; 
+}
 /*uilchilgee*/
 
 .serviceCon {
