@@ -298,15 +298,17 @@
 
 /* Slider */
 /*--------------------------------------ажлын зар дүрэм 2----------*/
-.twoMenu {
+.twoSection {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  width: 80vw;
+  margin: auto;
 }
 /*---------------------------------------------Ажлын зар*/
 .workCon {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  background: #fff;
+  grid-template-columns: auto auto;
+  gap: 0;
   justify-content: stretch;
   border-radius: 3px;
   width: 350px;
@@ -315,7 +317,7 @@
 }
 .work-left {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: auto auto;
 }
 .work-left p {
   display: flex;
@@ -323,12 +325,14 @@
   align-items: center;
 }
 .work-left p:first-child {
+  margin-left: 1rem;
   font-size: 80px;
-  font-weight: 900;
+  font-weight: 800;
 }
 .work-left p {
-  font-size: 16px;
-  font-weight: 500;
+  margin-left: 1rem;
+  font-size: 20px;
+  font-weight: 800;
 }
 .workCon img {
   width: 133px;
@@ -340,18 +344,17 @@
 
 .work-button {
   position: relative;
+  width: 60%;
   top: -50%;
-  left: 30%;
+  left: 36%;
   text-align: center;
   border-radius: 3px;
 }
 
 /************huuli**********/
-.lawCon {
-  display: grid;
-  grid-column-gap: 1em;
-  grid-template-rows: 5px 100px;
-}
-.lawCon img {
-  width: 37px;
+
+.lawitem:before{
+  content:url('/Picture/lawicon.webp');
+  height: 10px;
+  width: 10px;
 }
