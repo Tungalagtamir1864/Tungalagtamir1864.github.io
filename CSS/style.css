@@ -463,3 +463,8 @@ input[type="submit"]:hover {
 .address p {
   font-size: 0.7rem;
 }
+p{
+  font-weight: 300;
+  color: #5c5c5c;
+  text-align: justify;
+}
