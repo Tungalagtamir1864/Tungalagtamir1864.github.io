@@ -173,9 +173,8 @@
   text-align: center;
   font-size: 15px;
 }
-.serviceItem h3{
+.serviceItem h3 {
   font-weight: 300;
-  
 }
 .serviceItem:hover {
   background-color: #ff9900;
@@ -185,7 +184,6 @@
 /*project_map*/
 
 .project_map img {
-  
   width: 80%;
   align-items: center;
   justify-content: center;
@@ -270,7 +268,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: auto;
-  
+
   padding-left: 8%;
   padding-right: 8%;
 }
@@ -333,7 +331,6 @@
 }
 
 @media (max-width: 1100px) {
-  
 }
 @media (max-width: 910px) {
   .slider-info {
@@ -361,8 +358,7 @@
   }
   .texnicCon {
     grid-template-columns: repeat(5, 1fr);
-    }
-
+  }
 }
 @media (max-width: 760px) {
   .about {
@@ -375,7 +371,7 @@
     margin: auto;
     gap: 0.5rem;
   }
-  
+
   .statisticItem {
     padding: 5px;
   }
@@ -412,23 +408,22 @@
     width: 85%;
     top: 10%;
   }
-   
+
   .statisticItem {
     padding: 5px;
     width: 180px;
   }
   .serviceCon {
     grid-template-columns: repeat(2, 1fr);
-    
   }
   .texnicCon {
     grid-template-columns: repeat(4, 1fr);
-    }
-    .twoSection {
-      grid-template-columns: repeat(1, 1fr);
-      
+  }
+  .twoSection {
+    grid-template-columns: repeat(1, 1fr);
+
     width: 80%;
-    } 
+  }
 }
 @media (max-width: 580px) {
   .about {
@@ -438,13 +433,12 @@
   .statistic {
     height: 250px;
   }
-  
+
   .statisticItem {
     padding: 5px;
     width: 120px;
   }
   .texnicCon {
     grid-template-columns: repeat(3, 1fr);
-    }
-  
+  }
 }
