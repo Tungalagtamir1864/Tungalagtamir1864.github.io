@@ -26,7 +26,104 @@
         }
     </script>
 
+    <script>
+        const projects = [
+            {
+                companyName: "ЭРДЭНЭ МОНГОЛ ХХК",
+                location: "Баянхонгор аймгийн Шинэжинст сум",
+                date: "2023/05/04",
+            },
+            {
+                companyName: "ЭРДЭНЭ МОНГОЛ ХХК2",
+                location: "Баянхонгор аймгийн Шинэжинст сум2",
+                date: "2023/05/09",
+            },
+            {
+                companyName: "ЭРДЭНЭ МОНГОЛ ХХК",
+                location: "Баянхонгор аймгийн Шинэжинст сум",
+                date: "2023/05/04",
+            },
+            {
+                companyName: "ЭРДЭНЭ МОНГОЛ ХХК2",
+                location: "Баянхонгор аймгийн Шинэжинст сум2",
+                date: "2023/05/09",
+            },
 
+            {
+                companyName: "ЭРДЭНЭ МОНГОЛ ХХК",
+                location: "Баянхонгор аймгийн Шинэжинст сум",
+                date: "2023/05/04",
+            },
+            {
+                companyName: "ЭРДЭНЭ МОНГОЛ ХХК2",
+                location: "Баянхонгор аймгийн Шинэжинст сум2",
+                date: "2023/05/09",
+            },
+
+            {
+                companyName: "ЭРДЭНЭ МОНГОЛ ХХК",
+                location: "Баянхонгор аймгийн Шинэжинст сум",
+                date: "2023/05/04",
+            },
+            {
+                companyName: "ЭРДЭНЭ МОНГОЛ ХХК2",
+                location: "Баянхонгор аймгийн Шинэжинст сум2",
+                date: "2023/05/09",
+            },
+
+            {
+                companyName: "ЭРДЭНЭ МОНГОЛ ХХК",
+                location: "Баянхонгор аймгийн Шинэжинст сум",
+                date: "2023/05/04",
+            },
+            {
+                companyName: "ЭРДЭНЭ МОНГОЛ ХХК2",
+                location: "Баянхонгор аймгийн Шинэжинст сум2",
+                date: "2023/05/09",
+            },
+
+            {
+                companyName: "ЭРДЭНЭ МОНГОЛ ХХК",
+                location: "Баянхонгор аймгийн Шинэжинст сум",
+                date: "2023/05/04",
+            },
+            {
+                companyName: "ЭРДЭНЭ МОНГОЛ ХХК2",
+                location: "Баянхонгор аймгийн Шинэжинст сум2",
+                date: "2023/05/09",
+            },
+
+        ];
+        class Project {
+            constructor({ companyName, location, date }) {
+                this.companyName = detail.companyName;
+                this.location = detail.location;
+                this.date = detail.location;
+            }
+
+
+            render() {
+                return `<article>
+                            <h3>${this.companyName}</h3>
+                            <p> src="${this.location}</p>
+                            <p>${this.date}</p>
+                        </article>`;
+            }
+        };
+
+
+        function App(projects, project_Element) {
+            let ren_projects = "";
+
+            projects.forEach(element => {
+                let ren = new Project(element);
+                ren_projects += ren.render();
+            })
+
+            document.getElementById(project_Element).insertAdjacentHTML("afterbegin", ren_projects);
+        }
+        window.onload = () => App(projects, "projects");
+    </script>*/
 </head>
 
 <body>
@@ -73,25 +170,7 @@
 
     <!-- servise -->
 
-    <article class="header-img">
-        <h1>ҮЙЛЧИЛГЭЭ<h1>
-    </article>
-    <section>
-        <div class="titleDes">
-            <h2 class="subtitle">АШИГТ МАЛТМАЛЫН ХАЙГУУЛЫН ӨРӨМДЛӨГ</h2>
-        </div>
-        <p class="mar-t-2"> Өрөмдлөгийн ажлын үр дүнгээр ашигт малтмалын эдийн засгийн үр өгөөжтэй хэсгүүдийн байршлыг
-            тодорхойлох бөгөөд эрэл хайгуулын төлөвлөлт болон таамаглалын шатны хийсэн урьдчилсан мэдээ, таамгуудыг
-            баталгаажуулдаг.
-            Өрөмдлөгийн ажлыг гүйцэтгэдэг олон төрлийн технологийн аргачлалууд байдаг ч ашигт малтмалын эрэл хайгуулын
-            салбарт дараах гурван аргачлалуудыг түгээмэл хэрэглэж байна. Өрөмдлөгийн зардал өсөх дарааллаар шнекен
-            өрөмдлөг, хийн цохилтот болон гулуузан дээжтэй өрөмдлөгийн аргуудыг ашиглан үйл ажиллагаагаа явуулж байна.
-        </p>
-        <p class="mar-t-2">
-            Манай өрмийн баг хамт олон хамгийн хүнд хэцүү геологийн тогтоц бүхий газруудад хэрэглэгчийн шаардлагад
-            нийцсэн өрөмдлөгийн үйлчилгээг үзүүлж, өөрийн өрөмдөх, дээж авах ур чадвар, туршлагын цар хүрээг харуулсан
-            олон ажлыг амжилттай хийж гүйцэтгэж байна. Өрөмдлөг хийсэн ашигт малтмалын ордын төрлүүд:
-        </p>
+
 
     </section>
     <section>
@@ -128,54 +207,10 @@
             <button class="btn active" onclick="filterSelection('Бусад ховор элементүүд')">Бусад ховор
                 элементүүд</button>
         </article>
+        <div id="projects"></div>
 
-        <article>
-            <h3>ЭРДЭНЭ МОНГОЛ ХХК</h3>
-            <p>Баянхонгор аймгийн Шинэжинст сум</p>
-            <p>2023/05/04</p>
-        </article>
-        <article>
-            <h3>ЭРДЭНЭ МОНГОЛ ХХК</h3>
-            <p>Баянхонгор аймгийн Шинэжинст сум</p>
-            <p>2023/05/04</p>
-        </article>
-        <article>
-            <h3>ЭРДЭНЭ МОНГОЛ ХХК</h3>
-            <p>Баянхонгор аймгийн Шинэжинст сум</p>
-            <p>2023/05/04</p>
-        </article>
-        <article>
-            <h3>ЭРДЭНЭ МОНГОЛ ХХК</h3>
-            <p>Баянхонгор аймгийн Шинэжинст сум</p>
-            <p>2023/05/04</p>
-        </article>
     </section>
 
-    <section>
-        <div class="titleDes">
-            <h2 class="subtitle">ҮЙЛЧИЛГЭЭ</h2>
-        </div>
-        <div class="serviceCon">
-            <article class="serviceItem">
-                <h3>Геологи-хайгуулын баганат эргэлтэт өрөмдлөг</h3>
-            </article>
-            <article class="serviceItem">
-                <h3>Геологи-хайгуулын баганат эргэлтэт өрөмдлөг</h3>
-            </article>
-            <article class="serviceItem">
-                <h3>Геологи-хайгуулын баганат эргэлтэт өрөмдлөг</h3>
-            </article>
-            <article class="serviceItem">
-                <h3>Геологи-хайгуулын баганат эргэлтэт өрөмдлөг</h3>
-            </article>
-            <article class="serviceItem">
-                <h3>Геологи-хайгуулын баганат эргэлтэт өрөмдлөг</h3>
-            </article>
-            <article class="serviceItem">
-                <h3>Геологи-хайгуулын баганат эргэлтэт өрөмдлөг</h3>
-            </article>
-        </div>
-    </section>
     <div class="req-add mar-t-2">
         <section>
             <h2 class="t-center">Бидэнд хүсэлтээ үлдээгээрэй</h2>

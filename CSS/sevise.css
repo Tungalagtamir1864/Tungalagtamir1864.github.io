@@ -145,3 +145,27 @@
   text-align: end;
   padding-right: 4px;
 }
+.projectcon{
+  display: grid;
+  width: 80vw;
+  margin: auto;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+.project_item {
+  border-radius: 3px;
+  margin: 10px; /* Артиклуудын хоорондын зай */
+  padding: 1%;
+  width: 200px;
+  height: 150px;
+  border: 1px solid #e2e2e2;
+  text-align: center;
+}
+.project_item h2{
+  font-weight: 800;
+}
+.project_item p{
+  text-align: center;
+  
+  font-weight: 300;
+}
