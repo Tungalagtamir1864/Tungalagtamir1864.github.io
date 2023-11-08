@@ -185,7 +185,9 @@
 /*project_map*/
 
 .project_map img {
-  display: flex;
+  
+  width: 80%;
+  align-items: center;
   justify-content: center;
 }
 
@@ -267,8 +269,10 @@
 .twoSection {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 80vw;
   margin: auto;
+  
+  padding-left: 8%;
+  padding-right: 8%;
 }
 /*---------------------------------------------Ажлын зар*/
 .workCon {
@@ -355,7 +359,9 @@
     font-weight: 600;
     line-height: 30px;
   }
-  
+  .texnicCon {
+    grid-template-columns: repeat(5, 1fr);
+    }
 
 }
 @media (max-width: 760px) {
@@ -383,6 +389,9 @@
     margin-top: 20px;
     font-weight: 600;
     line-height: 30px;
+  }
+  .twoSection {
+    width: 95%;
   }
 }
 
@@ -412,6 +421,14 @@
     grid-template-columns: repeat(2, 1fr);
     
   }
+  .texnicCon {
+    grid-template-columns: repeat(4, 1fr);
+    }
+    .twoSection {
+      grid-template-columns: repeat(1, 1fr);
+      
+    width: 80%;
+    } 
 }
 @media (max-width: 580px) {
   .about {
@@ -426,5 +443,8 @@
     padding: 5px;
     width: 120px;
   }
+  .texnicCon {
+    grid-template-columns: repeat(3, 1fr);
+    }
   
 }

@@ -292,8 +292,8 @@ section .titleDes {
 section .titleDes .subtitle {
   position: absolute;
   color: var(--section-title-color);
-  font-size: 25px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 600;
   letter-spacing: 3px;
 }
 
@@ -309,7 +309,7 @@ section .titleDes .subtitle {
   align-items: center;
   flex-direction: column;
 }
-/* гурвалжин  
+/* гурвалжин  */
 section div .subtitle::after {
   content: "";
   position: absolute;
@@ -321,8 +321,8 @@ section div .subtitle::after {
   border-right: 15px solid transparent;
   border-top: 15px solid var(--title-orange-color);
   clear: both;
-}*/
-/*section line
+}
+/*section line*/
 section div .subtitle::before {
   content: "";
   display: block;
@@ -332,7 +332,7 @@ section div .subtitle::before {
   top: 120%;
   position: absolute;
 }
-*/
+
 .main-button {
   background: var(--title-orange-color);
   color: #fff;
@@ -410,6 +410,11 @@ section div .subtitle::before {
   .open #mobile-menu {
     right: -1rem;
   }
+  section .titleDes .subtitle {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
 }
 @media (max-width: 580px) {
 }
