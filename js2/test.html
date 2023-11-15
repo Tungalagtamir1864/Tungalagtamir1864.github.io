@@ -118,9 +118,11 @@
             render() {
                 return `<article class="project_item">
                             <img src="${this.imgLink}" alt="">
-                            <h3>${this.companyName}</h3>
-                            <p> ${this.location}</p>
-                            <p>${this.date}</p>
+                            <div class="project_text">
+                                <h3>${this.companyName}</h3>
+                                <p> ${this.location}</p>
+                                <p>${this.date}</p>
+                            <div>
                         </article>`;
             }
         };
