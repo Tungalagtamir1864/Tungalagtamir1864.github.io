@@ -29,65 +29,77 @@
     <script>
         const projects = [
             {
+                imgLink: "/Picture/projectimg1.png",
                 companyName: "ЭРДЭНЭ МОНГОЛ ХХК",
                 location: "Баянхонгор аймгийн Шинэжинст сум",
                 date: "2011/05/10",
             },
             {
+                imgLink: "/Picture/projectimg1.png",
                 companyName: "ХӨЮҮСӨКАНТАНЬ ХХК",
                 location: "Баянхонгор аймгийн Баянговь сум",
                 date: "2011/07/01",
             },
             {
+                imgLink: "/Picture/projectimg1.png",
                 companyName: " ХӨЮҮСӨКАНТАНЬ ХХК",
                 location: "Баянхонгор аймгийн Баянговь сум",
                 date: "2011/08/10",
             },
             {
+                imgLink: "/Picture/projectimg1.png",
                 companyName: "РЕМАР ХХК",
                 location: "Дорноговь аймгийн Өргөн сум",
                 date: "2012/05/25",
             },
 
             {
+                imgLink: "/Picture/projectimg1.png",
                 companyName: "ЖЮДЕКУАНЕ ХХК",
                 location: "Баянхонгор аймгийн Сангийндалай сум",
                 date: "2012/07/26",
             },
             {
-                companyName:"ЧИНБӨЛАЙ ХХК" ,
+                imgLink: "/Picture/projectimg1.png",
+                companyName: "ЧИНБӨЛАЙ ХХК",
                 location: "Архангай аймгийн Хайрхан сум",
                 date: "2012/07/22",
             },
 
             {
+                imgLink: "/Picture/projectimg1.png",
                 companyName: "ЖӨН ЮАН ХХК",
                 location: "Баянхонгор аймгийн Шинэжинст сум",
                 date: "2013/08/28",
             },
             {
+                imgLink: "/Picture/projectimg1.png",
                 companyName: "ЖӨН ЮАН ХХК",
                 location: "Архангай аймгийн Ихтамир сум",
                 date: "2013/09/30",
             },
 
             {
+                imgLink: "/Picture/projectimg1.png",
                 companyName: "ЖӨН ЮАН ХХК",
                 location: "Дорноговь аймгийн Даланжаргалан сум",
                 date: "2023/05/04",
             },
             {
+                imgLink: "/Picture/projectimg1.png",
                 companyName: "ЖӨН ЮАН ХХК",
                 location: "",
                 date: "2023/05/09",
             },
 
             {
+                imgLink: "/Picture/projectimg1.png",
                 companyName: "ЖӨН ЮАН ХХК",
                 location: "Баянхонгор аймгийн Шинэжинст сум",
                 date: "2023/05/04",
             },
             {
+                imgLink: "/Picture/projectimg1.png",
                 companyName: "ЖӨН ЮАН ХХК",
                 location: "",
                 date: "2023/05/09",
@@ -95,7 +107,8 @@
 
         ];
         class Project {
-            constructor({ companyName, location, date }) {
+            constructor({ imgLink, companyName, location, date }) {
+                this.imgLink = imgLink;
                 this.companyName = companyName;
                 this.location = location;
                 this.date = date;
@@ -104,6 +117,7 @@
 
             render() {
                 return `<article class="project_item">
+                            <img src="${this.imgLink}" alt="">
                             <h3>${this.companyName}</h3>
                             <p> ${this.location}</p>
                             <p>${this.date}</p>
@@ -145,6 +159,7 @@
                     <li><a href="/HTML/aboutus.html">Бидний тухай</a></li>
                     <li><a href="/HTML/work.html">Ажлын байр</a></li>
                 </ul>
+
             </nav>
             <div id="hamburger" onclick="toggleMobileMenu(this)">
                 <div class="bars">
@@ -183,12 +198,16 @@
             өрөмдлөг, хийн цохилтот болон гулуузан дээжтэй өрөмдлөгийн аргуудыг ашиглан үйл ажиллагаагаа явуулж байна.
         </p>
     </section>
-    <section >
-        <div class="titleDes" id="projects" >
+    <section>
+
+        <div class="titleDes" id="projects">
             <h2 class="subtitle">ТӨСЛҮҮД</h2>
         </div>
+
+
+
     </section>
-    
+
     <footer>
         <p>Copyright © ENKHTUN GAZRIIN KHISHIG LLC 2023. All Rights Reserved.</p>
     </footer>
