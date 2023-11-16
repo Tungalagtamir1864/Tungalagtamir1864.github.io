@@ -67,8 +67,6 @@ a {
 }
 body {
   font-family: "Montserrat", sans-serif;
-  
-
   line-height: 1.5rem;
   /* body хэсэгт орж ирэх бүх font-ийг Roboto Slab болгох хэрвээ тэр уншиигдххгүй бол serif болох*/
 }
@@ -86,12 +84,13 @@ header {
   z-index: 10;
   height: 6rem;
   grid-template-areas: "logo nav";
-}
-header .header-right {
-  grid-area: nav;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+
+  & .header-right {
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 /* nav хэсэг */
 /* mobile header */
@@ -128,7 +127,7 @@ header .header-right nav > ul > li a::after {
   background-color: var(--title-orange-color);
   transition: transform 0.25s ease-in;
 }
-header .header-right nav > ul > li > a:hover::after {
+& li > a:hover::after {
   transform: scaleX(1);
 }
 #current {
@@ -199,17 +198,12 @@ header .header-right nav > ul > li > a:hover::after {
 }
 .main-title {
   font-family: "Philosopher", sans-serif;
-  margin-left: 25px;
+  margin-left: 2%;
   font-style: italic;
   font-size: 15px;
-  display: flex;
-  line-height: 20px;
-  font-weight: 800;
-  color: #f90;
+  color: var(--title-orange-color);
   text-shadow: 0px 4px 4px rgba(81, 81, 81, 0.25);
   font-weight: 400;
-  line-height: 20px; /* 100% */
-  letter-spacing: 1.2px;
   justify-content: center;
 
   color: var(--title-orange-color);
@@ -269,12 +263,12 @@ header .header-right nav > ul > li > a:hover::after {
 
 /* footer хэсэг */
 footer {
-  background-color:#ffffff;
-  border: 0.5px solid rgb(106, 73, 0);
+  background-color: #ffffff;
+  border: 0.5px solid rgb(151, 151, 151);
   color: rgb(153, 153, 153);
   padding: 2rem;
 }
-footer p {  
+footer p {
   text-align: center;
 }
 
@@ -298,12 +292,11 @@ section .titleDes .subtitle {
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0px;
-  
 }
 
 /*zuragtai garchignuud*/
 .header-img {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   display: flex;
   font-size: 30px;
@@ -418,7 +411,6 @@ section div .subtitle::before {
     font-size: 20px;
     font-weight: 600;
   }
-  
 }
 @media (max-width: 580px) {
 }
@@ -444,7 +436,15 @@ section div .subtitle::before {
   flex-direction: column;
   gap: 2rem 0;
 }
-
+.req-add section h2 {
+  color: var(--title-orange-color);
+  font-weight: 400;
+}
+.req-add section h4 {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--section-title-color);
+}
 input[type="text"],
 select,
 textarea,
@@ -472,8 +472,7 @@ input[type="submit"]:hover {
 .address p {
   font-size: 0.7rem;
 }
-p{
+p {
   font-weight: 300;
   text-align: justify;
 }
-
