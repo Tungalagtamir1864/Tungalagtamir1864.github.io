@@ -113,7 +113,6 @@ header .header-right nav > ul > li a {
 /* cursor очиход өнгөө өөрчлөх */
 header .header-right nav > ul > li a:hover {
   color: var(--title-orange-color);
-  font-weight: 700;
 }
 
 header .header-right nav > ul > li a::after {
