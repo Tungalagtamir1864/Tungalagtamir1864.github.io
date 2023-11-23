@@ -10,11 +10,6 @@
     <link rel="stylesheet" href="/CSS/style.css">
     <link rel="stylesheet" href="/CSS/sevise.css">
     <script src="https://kit.fontawesome.com/fb1fcdd475.js" crossorigin="anonymous"></script>
-
-
-
-
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -25,121 +20,8 @@
             menu.classList.toggle('open');
         }
     </script>
+    <script src="./index.js"></script>
 
-    <script>
-        const projects = [
-            {
-                imgLink: "/Picture/projectimg1.png",
-                companyName: "ЭРДЭНЭ МОНГОЛ ХХК",
-                location: "Баянхонгор аймгийн Шинэжинст сум",
-                date: "2011/05/10",
-            },
-            {
-                imgLink: "/Picture/projectimg1.png",
-                companyName: "ХӨЮҮСӨКАНТАНЬ ХХК",
-                location: "Баянхонгор аймгийн Баянговь сум",
-                date: "2011/07/01",
-            },
-            {
-                imgLink: "/Picture/projectimg1.png",
-                companyName: " ХӨЮҮСӨКАНТАНЬ ХХК",
-                location: "Баянхонгор аймгийн Баянговь сум",
-                date: "2011/08/10",
-            },
-            {
-                imgLink: "/Picture/projectimg1.png",
-                companyName: "РЕМАР ХХК",
-                location: "Дорноговь аймгийн Өргөн сум",
-                date: "2012/05/25",
-            },
-
-            {
-                imgLink: "/Picture/projectimg1.png",
-                companyName: "ЖЮДЕКУАНЕ ХХК",
-                location: "Баянхонгор аймгийн Сангийндалай сум",
-                date: "2012/07/26",
-            },
-            {
-                imgLink: "/Picture/projectimg1.png",
-                companyName: "ЧИНБӨЛАЙ ХХК",
-                location: "Архангай аймгийн Хайрхан сум",
-                date: "2012/07/22",
-            },
-
-            {
-                imgLink: "/Picture/projectimg1.png",
-                companyName: "ЖӨН ЮАН ХХК",
-                location: "Баянхонгор аймгийн Шинэжинст сум",
-                date: "2013/08/28",
-            },
-            {
-                imgLink: "/Picture/projectimg1.png",
-                companyName: "ЖӨН ЮАН ХХК",
-                location: "Архангай аймгийн Ихтамир сум",
-                date: "2013/09/30",
-            },
-
-            {
-                imgLink: "/Picture/projectimg1.png",
-                companyName: "ЖӨН ЮАН ХХК",
-                location: "Дорноговь аймгийн Даланжаргалан сум",
-                date: "2023/05/04",
-            },
-            {
-                imgLink: "/Picture/projectimg1.png",
-                companyName: "ЖӨН ЮАН ХХК",
-                location: "",
-                date: "2023/05/09",
-            },
-
-            {
-                imgLink: "/Picture/projectimg1.png",
-                companyName: "ЖӨН ЮАН ХХК",
-                location: "Баянхонгор аймгийн Шинэжинст сум",
-                date: "2023/05/04",
-            },
-            {
-                imgLink: "/Picture/projectimg1.png",
-                companyName: "ЖӨН ЮАН ХХК",
-                location: "",
-                date: "2023/05/09",
-            },
-
-        ];
-        class Project {
-            constructor({ imgLink, companyName, location, date }) {
-                this.imgLink = imgLink;
-                this.companyName = companyName;
-                this.location = location;
-                this.date = date;
-            }
-
-
-            render() {
-                return `<article class="project_item">
-                            <img src="${this.imgLink}" alt="">
-                            <div class="project_text">
-                                <h3>${this.companyName}</h3>
-                                <p> ${this.location}</p>
-                                <p>${this.date}</p>
-                            <div>
-                        </article>`;
-            }
-        };
-
-
-        function App(projects, project_Element) {
-            let ren_projects = "";
-
-            projects.forEach(element => {
-                let ren = new Project(element);
-                ren_projects += ren.render();
-            })
-
-            document.getElementById(project_Element).insertAdjacentHTML("afterend", ren_projects);
-        }
-        window.onload = () => App(projects, "projects");
-    </script>
 </head>
 
 <body>
@@ -206,8 +88,8 @@
             <h2 class="subtitle">ТӨСЛҮҮД</h2>
         </div>
 
-
-
+        
+        <projectList direction="column"></projectList>
     </section>
 
     <footer>
