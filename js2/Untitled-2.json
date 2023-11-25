@@ -1,0 +1,100 @@
+{
+    "record": {
+        "records": [
+            {
+                "imgLink": "/Picture/projectimg1.png",
+                "companyName": "ЭРДЭНЭ МОНГОЛ ХХК",
+                "location": "Баянхонгор аймгийн Шинэжинст сум",
+                "date": "2011/05/10",
+                "profil": "true"
+            },
+            {
+                "imgLink": "/Picture/projectimg1.png",
+                "companyName": "ХӨЮҮСӨКАНТАНЬ ХХК",
+                "location": "Баянхонгор аймгийн Баянговь сум",
+                "date": "2011/07/01",
+                "profil": "true"
+            },
+            {
+                "imgLink": "/Picture/projectimg1.png",
+                "companyName": " ХӨЮҮСӨКАНТАНЬ ХХК",
+                "location": "Баянхонгор аймгийн Баянговь сум",
+                "date": "2011/08/10",
+                "profil": "true"
+            },
+            {
+                "imgLink": "/Picture/projectimg1.png",
+                "companyName": "РЕМАР ХХК",
+                "location": "Дорноговь аймгийн Өргөн сум",
+                "date": "2012/05/25",
+                "profil": "true"
+            },
+            {
+                "imgLink": "/Picture/projectimg1.png",
+                "companyName": "ЖЮДЕКУАНЕ ХХК",
+                "location": "Баянхонгор аймгийн Сангийндалай сум",
+                "date": "2012/07/26",
+                "profil": "true"
+            },
+            {
+                "imgLink": "/Picture/projectimg1.png",
+                "companyName": "ЧИНБӨЛАЙ ХХК",
+                "location": "Архангай аймгийн Хайрхан сум",
+                "date": "2012/07/22",
+                "profil": "true"
+            },
+            {
+                "imgLink": "/Picture/projectimg1.png",
+                "companyName": "ЖӨН ЮАН ХХК",
+                "location": "Баянхонгор аймгийн Шинэжинст сум",
+                "date": "2013/08/28",
+                "profil": "true"
+            },
+            {
+                "imgLink": "/Picture/projectimg1.png",
+                "companyName": "ЖӨН ЮАН ХХК",
+                "location": "Архангай аймгийн Ихтамир сум",
+                "date": "2013/09/30",
+                "profil": "true"
+            },
+            {
+                "imgLink": "/Picture/projectimg1.png",
+                "companyName": "ЖӨН ЮАН ХХК",
+                "location": "Дорноговь аймгийн Даланжаргалан сум",
+                "date": "2023/05/04",
+                "profil": "true"
+            },
+            {
+                "imgLink": "/Picture/projectimg1.png",
+                "companyName": "ЖӨН ЮАН ХХК",
+                "location": "",
+                "date": "2023/05/09",
+                "profil": "true"
+            },
+            {
+                "imgLink": "/Picture/projectimg1.png",
+                "companyName": "ЖӨН ЮАН ХХК",
+                "location": "Баянхонгор аймгийн Шинэжинст сум",
+                "date": "2023/05/04",
+                "profil": "true"
+            },
+            {
+                "imgLink": "/Picture/projectimg1.png",
+                "companyName": "ЖӨН ЮАН ХХК",
+                "location": "",
+                "date": "2023/05/09",
+                "profil": "true"
+            }
+        ],
+        "metadata": {
+            "parentId": "6554e0d454105e766fd0637f",
+            "private": true
+        }
+    },
+    "metadata": {
+        "id": "6554e0d454105e766fd0637f",
+        "private": false,
+        "createdAt": "2023-11-15T15:16:36.307Z",
+        "name": "record"
+    }
+}
