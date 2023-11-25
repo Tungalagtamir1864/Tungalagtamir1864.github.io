@@ -1,13 +1,15 @@
 :root {
   --title-orange-color: #ff9900;
+  --main-yellow-color: #fb9a08;
+  --main-gray-blue-color: #3e4454;
   --nav-saaral-color: #5c5c5c;
   --section-line-color: #cacaca;
-  --section-title-color: #686868;
+  --section-title-color: #000000;
   --footer-bg-color: #dbdbdb;
   --main-bg-color: #f0f0f0;
   --title-orange-color05: #90290a34;
 }
-
+/*
 .font-bold {
   font-weight: bold;
 }
@@ -42,18 +44,15 @@
 .mar-l-1 {
   margin-left: 1rem;
 }
-.main-orange-text-color {
-  color: #ff9900;
-}
-.main-sub-text-color {
-  color: #616161;
-}
+
+
 .border-rad {
   border-radius: 3%;
 }
 .text-underline {
   text-decoration: underline;
 }
+*/
 * {
   margin: 0;
   padding: 0;
@@ -94,21 +93,23 @@ header {
 }
 /* nav хэсэг */
 /* mobile header */
-header .header-right nav > ul {
+nav > ul {
   display: flex;
   justify-content: space-between;
-}
-header .header-right nav > ul > li {
-  padding-left: 2rem;
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-}
-/* inlineblock болон realitive болгосноор hover underline effect зөв ажиллана. */
-header .header-right nav > ul > li a {
-  font-weight: 400;
-  color: var(--nav-saaral-color);
-  display: inline-block;
-  position: relative;
+
+  & li {
+    padding-left: 2rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+
+    /* inlineblock болон realitive болгосноор hover underline effect зөв ажиллана. */
+    & a {
+      font-weight: 400;
+      color: var(--nav-saaral-color);
+      display: inline-block;
+      position: relative;
+    }
+  }
 }
 /* cursor очиход өнгөө өөрчлөх */
 header .header-right nav > ul > li a:hover {
@@ -131,6 +132,7 @@ header .header-right nav > ul > li a::after {
 }
 #current {
   color: var(--title-orange-color);
+  
 }
 /* navbar dropdown энэ хэсэгт энгийн үед display none байж байгаад cursor очиход flex colimn болоод бууна */
 
@@ -152,7 +154,7 @@ header .header-right nav > ul > li a::after {
 .dropdown:hover .dropdown-content li {
   margin-top: 0.5rem;
   padding-left: 0.5rem;
-  border-bottom: solid 1px var(--title-orange-color05);
+  border-bottom: solid 1px var(--title-orange-color);
 }
 .dropdown .dropdown-content li:hover {
   border-bottom: solid 1px var(--title-orange-color);
@@ -204,7 +206,6 @@ header .header-right nav > ul > li a::after {
   text-shadow: 0px 4px 4px rgba(81, 81, 81, 0.25);
   font-weight: 400;
   justify-content: center;
-
   color: var(--title-orange-color);
 }
 /* hamnurger menu display none */
@@ -290,7 +291,6 @@ section .titleDes .subtitle {
   color: var(--section-title-color);
   font-size: 20px;
   font-weight: 500;
-  letter-spacing: 0px;
 }
 
 /*zuragtai garchignuud*/
@@ -334,6 +334,7 @@ section div .subtitle::before {
   color: #fff;
   font-size: 15px;
   padding: 1%;
+  border-radius: 2px;
   font-weight: 300;
 }
 

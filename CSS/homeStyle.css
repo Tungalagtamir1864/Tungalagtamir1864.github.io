@@ -1,6 +1,7 @@
 /* homeBack*/
 :root {
   --title-orange-color: #ff9900;
+  --main-yellow-color: #e1bc00;
   --nav-saaral-color: #5c5c5c;
   --section-line-color: #cacaca;
   --section-title-color: #686868;
@@ -33,6 +34,7 @@
   letter-spacing: 1.15px;
   background-color: #ff9900;
   margin-bottom: 9px;
+  border-radius: 2px;
 }
 .homeBack .slider-info p {
   padding-left: 3%;
@@ -42,6 +44,7 @@
   color: var(--main-bg-color);
   font-size: 15px;
   font-weight: 400;
+  border-radius: 2px;
 }
 .homeBack article img {
   width: 100%;
@@ -94,16 +97,6 @@
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 1.3px;
-}
-.griditem a {
-  border: 0.5px solid #e3e3e3;
-  border-radius: 3px;
-  padding: 5px;
-  margin-bottom: 10px;
-  color: #ff9f00;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 400;
 }
 
 .griditem a:hover {
@@ -192,7 +185,7 @@
 
 /*project_map*/
 
-.project_map{
+.project_map {
   align-items: center;
   display: grid;
 }
@@ -274,23 +267,27 @@
   padding-right: 4px;
 }
 
+/*---------------------------tunsh-------------------------*/
+.tunsh {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  
+  align-items: center;
+  & img {
+    margin: auto;
+    width: 50%;
+  }
+}
+
 /*-------------------------------slide---------------*/
 
 /* Slider */
 /*--------------------------------------ажлын зар дүрэм 2----------*/
-.twoSection {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin: auto;
-  padding-left: 8%;
-  padding-right: 8%;
-}
+
 /*---------------------------------------------Ажлын зар*/
 .workCon {
   display: grid;
   grid-template-columns: auto auto;
-  gap: 0;
-  justify-content: stretch;
   border-radius: 3px;
   width: 350px;
   height: 135px;
@@ -299,28 +296,23 @@
 .work-left {
   display: grid;
   grid-template-columns: auto auto;
-}
-.work-left p {
+& p {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.work-left p:first-child {
+  margin-left: 1rem;
+  font-size: 20px;
+  font-weight: 800;
+  }
+& p:first-child {
   margin-left: 1rem;
   font-size: 80px;
   font-weight: 800;
 }
-.work-left p {
-  margin-left: 1rem;
-  font-size: 20px;
-  font-weight: 800;
 }
 .workCon img {
   width: 133px;
   right: 0;
-}
-
-.work-rigth {
 }
 
 .work-button {
@@ -333,11 +325,9 @@
 }
 
 /************huuli**********/
-.law{
-  display: grid;
-}
-.law a:before{
-  content: url('/Picture/lawicon.webp');
+
+.law a:before {
+  content: url("/Picture/lawicon.webp");
   height: 10px;
   width: 10px;
 }
