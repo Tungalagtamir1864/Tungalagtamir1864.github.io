@@ -263,10 +263,12 @@ header .header-right nav > ul > li a::after {
 
 /* footer хэсэг */
 footer {
-  background-color: #ffffff;
-  border: 0.5px solid rgb(151, 151, 151);
-  color: rgb(153, 153, 153);
+  background-color: var(--title-orange-color);
+  /*border: 0.5px solid rgb(151, 151, 151);*/
+
+  color: rgb(255, 255, 255);
   padding: 2rem;
+
 }
 footer p {
   text-align: center;
