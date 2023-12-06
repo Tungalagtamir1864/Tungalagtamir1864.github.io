@@ -465,12 +465,6 @@ input[type="submit"] {
   text-align: center;
 }
 
-input[type="submit"]:hover {
-  color: var(--title-orange-color);
-  border-color: #f90;
-  border-width: 1px;
-  background-color: white;
-}
 .address p {
   font-size: 0.7rem;
 }

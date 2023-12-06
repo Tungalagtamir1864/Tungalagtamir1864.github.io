@@ -1,15 +1,8 @@
-// app.js
+console.log("start");
 
-// urlHandler.js
-function getCategoryFromURL() {
-  const params = new URLSearchParams(document.location.search);
-  return params.get("category");
-}
-
-// recentProject.js
 class Project {
   constructor(ob) {
-    this.id = ob.id;
+    this.id = ob.id; 
     this.imgLink = ob.imgLink;
     this.companyName = ob.companyName;
     this.location = ob.location;
@@ -37,7 +30,7 @@ class Project {
   }
 }
 
-class RecentProject {
+export default class RecentProject {
   constructor(recentProjectUrl, dateFilter) {
     this._recentProjectList = [];
     this._recentProjectUrl = recentProjectUrl;
@@ -68,34 +61,31 @@ class RecentProject {
   }
 
   download(targetElement) {
-    const category = getCategoryFromURL();
+    fetch(`${this._recentProjectUrl}/latest`)
+      .then((result) => {
+        result.json().then((jsob) => {
+          const filteredArray = jsob.record.records.filter(
+            (item) => Date.parse(item.date) > this.dateFilter
+          );
 
-    fetch(this._recentProjectUrl, {
-      headers: {
-        'X-Master-Key': '$2b$10$YOUR_MASTER_KEY',
-      },
-    })
-      .then((result) => result.json())
-      .then((jsob) => {
-        const filteredArray = jsob.record.records
-          .filter((item) => category ? item.date.includes(category) : true)
-          .filter((item) => item.profil);
-          console.log(filteredPro);
+          //updating own javascript
+          if (filteredArray.length > 0) {
+            gebi(targetElement).insertAdjacentHTML(
+              "afterbegin",
+              filteredArray
+                .map((newProject) => {
+                  const _newProject = new Project(newProject);
+                  this._recentProjectList.push(_newProject);
+                  return _newProject.render();
+                })
+                .reduce((prevVal, curVal) => prevVal + curVal, "")
+            );
 
-        gebi(targetElement).insertAdjacentHTML(
-          "afterbegin",
-          filteredArray
-            .map((newProject) => {
-              const _newProject = new Project(newProject);
-              this._recentProjectList.push(_newProject);
-              return _newProject.render();
-            })
-            .reduce((prevVal, curVal) => prevVal + curVal, "")
-        );
-
-        this._recentProjectList.forEach((project_item) =>
-          project_item.bind("input", `recentproject_${project_item.id}`, "location")
-        );
+            this._recentProjectList.forEach((project_item) =>
+              project_item.bind("input", `recentproject_${project_item.id}`, "location")
+            );
+          }
+        });
       })
       .catch((err) => {
         console.log(err);
@@ -103,24 +93,25 @@ class RecentProject {
   }
 }
 
-// indexjs2.js
-console.log("start");
+const params = new URLSearchParams(document.location.search);
+const dateFilter = params.get("date");
 
-const profil = params.get("profil");
+//shortcut to getElementById
+const gebi = (id) => document.getElementById(id);
 
+
+//Create RecentProject object, with url
 const recentProject = new RecentProject(
   "https://api.jsonbin.io/v3/b/6554e0d454105e766fd0637f",
-  Date.parse(profil),
-  getCategoryFromURL()
+  Date.parse(dateFilter)
 );
 
+//Load content from RecentProjectURL
 recentProject.download("main");
 
+//Download project every 60 seconds into #main
 setInterval(() => recentProject.download("main"), 60000);
+
+//Upload updated project every 15 seconds back to the server
 setInterval(() => recentProject.upload(), 15000);
 console.log(dateFilter);
-
-// Helper function
-function gebi(id) {
-  return document.getElementById(id);
-}
