@@ -40,7 +40,6 @@ class RecentProject {
   constructor(recentProjectUrl) {
     this._recentProjectList = [];
     this._recentProjectUrl = recentProjectUrl;
-    this._lastUpdated = Date.now();
     this._hasChanged = false;
   }
 
