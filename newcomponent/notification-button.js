@@ -1,24 +1,30 @@
-import { LitElement, html, css } from 'lit';
+import { HTMLElement, html, css } from 'lit';
 
-class NotificationButton extends LitElement {
-  static styles = css`
-    :host {
-      display: block;
-      margin-top: 10px;
+  class NotificationButton extends HTMLElement {
+    constructor() {
+        super();
+        this.#render();
     }
-  `;
 
-  render() {
-    return html`
-      <button @click="${this.showNotification}">Notification Button</button>
-    `;
-  }
+    #render() { 
 
-  showNotification() {
-    const notificationElement = document.createElement('notification-component');
-    document.body.appendChild(notificationElement);
-    notificationElement.showNotification('Амжилттай гаргасан notification');
-  }
+        this.innerHTML = `
+        <style>
+
+
+        </style>
+        <input type="submit" value="Илгээх" ${this.getAttribute("likes")}>`
+         
+
+    }
+    connectedCallback() {
+
+    }
+    static get observedAttributes() {
+    }
+    attributeChangedCallback(name, oldVal, newVal) {
+       
+    }
 }
 
-customElements.define('notification-button', NotificationButton);
+window.customElements.define('NotificationButton', NotificationButton);

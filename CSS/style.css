@@ -65,7 +65,7 @@ a {
   color: var(--nav-saaral-color);
 }
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   line-height: 1.5rem;
   /* body хэсэгт орж ирэх бүх font-ийг Roboto Slab болгох хэрвээ тэр уншиигдххгүй бол serif болох*/
 }
@@ -549,12 +549,14 @@ section div .subtitle::before {
   margin: auto;
   gap: 1rem 2rem;
   height: auto;
-  justify-items: center;
+  justify-items: center; 
 }
 .req-add section {
   width: 100%;
   display: flex;
   flex-direction: column;
+  
+  font-family: Montserrat;
 }
 .req-add section form {
   display: flex;
@@ -564,11 +566,15 @@ section div .subtitle::before {
 .req-add section h2 {
   color: var(--title-orange-color);
   font-weight: 400;
+  text-align: center;
 }
 .req-add section h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-size: 18px;
   font-weight: 400;
   color: var(--section-title-color);
+  text-align: center;
 }
 input[type="text"],
 select,
@@ -588,8 +594,12 @@ input[type="submit"] {
   text-align: center;
 }
 
-.address p {
+address  {
   font-size: 0.7rem;
+  font-family: Montserrat;
+  &  span{
+    font-weight: 500;
+  }
 }
 p {
   font-weight: 300;

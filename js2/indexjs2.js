@@ -1,13 +1,12 @@
 // app.js
 
-// urlHandler
+// url
 function getCategoryFromURL() {
   const params = new URLSearchParams(document.location.search);
   console.log(params.get("category"));
   return params.get("category");
 }
 
-// recentProject
 class Project {
   constructor(ob) {
     this.id = ob.id;
@@ -38,12 +37,11 @@ class Project {
 }
 
 class RecentProject {
-  constructor(recentProjectUrl, dateFilter) {
+  constructor(recentProjectUrl) {
     this._recentProjectList = [];
     this._recentProjectUrl = recentProjectUrl;
     this._lastUpdated = Date.now();
     this._hasChanged = false;
-    this.dateFilter = dateFilter;
   }
 
   upload() {
@@ -78,9 +76,8 @@ class RecentProject {
       .then((result) => result.json())
       .then((jsob) => {
         const filteredArray = jsob.record.records
-        .filter((item) => item.profil) 
-        .filter((item) => (category ? item.date.includes(category) : true));
-         
+          .filter((item) => item.profil)
+          .filter((item) => (category ? item.date.includes(category) : true));
 
         gebi(targetElement).insertAdjacentHTML(
           "afterbegin",
