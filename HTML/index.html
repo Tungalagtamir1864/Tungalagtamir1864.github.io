@@ -713,36 +713,8 @@
         <p>Copyright © ENKHTUN GAZRIIN KHISHIG LLC 2023. All Rights Reserved.</p>
     </footer>
 </body>
-<script>
-    var myIndex = 0;
-    carousel();
 
-    function carousel() {
-        var i;
-        var x = document.getElementsByClassName("slider-main");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        myIndex++;
-        if (myIndex > x.length) { myIndex = 1 }
-        x[myIndex - 1].style.display = "block";
-        setTimeout(carousel, 4000);
-    }
-</script>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        window.addEventListener("scroll", function () {
-            var scroll = window.scrollY;
-            var black = document.querySelector(".header");
 
-            if (scroll > 300) {
-                black.style.background = "blue";
-            } else {
-                black.style.background = "red";
-            }
-        });
-    });
-</script>
 
 </html>

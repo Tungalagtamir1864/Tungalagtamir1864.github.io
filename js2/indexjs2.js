@@ -1,12 +1,13 @@
 // app.js
 
-// urlHandler.js
+// urlHandler
 function getCategoryFromURL() {
   const params = new URLSearchParams(document.location.search);
+  console.log(params.get("category"));
   return params.get("category");
 }
 
-// recentProject.js
+// recentProject
 class Project {
   constructor(ob) {
     this.id = ob.id;
@@ -18,7 +19,7 @@ class Project {
 
   render() {
     return `<article class="project_item">
-              <img src="${this.imgLink}" alt="">
+              <img src="${this.imgLink}" alt="энхтун төсөлийн зураг">
                 <div class="project_text">
                   <h3>${this.companyName}</h3>
                   <p> ${this.location}</p>
@@ -31,7 +32,6 @@ class Project {
     gebi(`${element}_${this.id}`).addEventListener(eventType, (event) => {
       this[property] = event.target.innerHTML;
       project_item._hasChanged = true;
-      console.log(`event:${event} this=${JSON.stringify(project_item)}`);
     });
     return this;
   }
@@ -72,15 +72,15 @@ class RecentProject {
 
     fetch(this._recentProjectUrl, {
       headers: {
-        'X-Master-Key': '$2b$10$YOUR_MASTER_KEY',
+        "X-Master-Key": "$2b$10$YOUR_MASTER_KEY",
       },
     })
       .then((result) => result.json())
       .then((jsob) => {
         const filteredArray = jsob.record.records
-          .filter((item) => category ? item.date.includes(category) : true)
-          .filter((item) => item.profil);
-          console.log(filteredPro);
+        .filter((item) => item.profil) 
+        .filter((item) => (category ? item.date.includes(category) : true));
+         
 
         gebi(targetElement).insertAdjacentHTML(
           "afterbegin",
@@ -94,7 +94,11 @@ class RecentProject {
         );
 
         this._recentProjectList.forEach((project_item) =>
-          project_item.bind("input", `recentproject_${project_item.id}`, "location")
+          project_item.bind(
+            "input",
+            `recentproject_${project_item.id}`,
+            "location"
+          )
         );
       })
       .catch((err) => {
@@ -103,9 +107,10 @@ class RecentProject {
   }
 }
 
-// indexjs2.js
+//--------------------------
 console.log("start");
 
+const params = new URLSearchParams(document.location.search); // params үүсгэх
 const profil = params.get("profil");
 
 const recentProject = new RecentProject(
@@ -116,9 +121,9 @@ const recentProject = new RecentProject(
 
 recentProject.download("main");
 
-setInterval(() => recentProject.download("main"), 60000);
-setInterval(() => recentProject.upload(), 15000);
-console.log(dateFilter);
+// setInterval(() => recentProject.download("main"), 60000);
+// setInterval(() => recentProject.upload(), 15000);
+// console.log(recentProject.dateFilter); // dateFilter гэсэн хувьсагчийг log хийж байна
 
 // Helper function
 function gebi(id) {

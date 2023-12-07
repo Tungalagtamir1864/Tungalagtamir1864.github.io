@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Web App</title>
+  <link rel="stylesheet" href="notification-button.css">
+</head>
+<body>
+  <section>
+    <h2 class="t-center">Бидэнд хүсэлтээ үлдээгээрэй</h2>
+    <h4 class="t-center">бид тантай эргэн холбогдох болно</h4>
+    <form class="mar-t-2">
+      <input name="name" type="text" placeholder="Нэр">
+      <input name="email" type="email" placeholder="И-майл">
+      <input name="subject" type="text" placeholder="Гарчиг">
+      <textarea name="comment" placeholder="Дэлгэрэнгүй"></textarea>
+
+      <notification-button></notification-button>
+      
+      <input type="submit" value="Илгээх">
+    </form>
+  </section>
+  <script type="module" src="./node_modules/lit/lit.js"></script>
+  <script type="module" src="notification-button.js"></script>
+</body>
+</html>

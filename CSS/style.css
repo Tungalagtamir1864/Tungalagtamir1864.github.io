@@ -1,6 +1,6 @@
 :root {
   --title-orange-color: #ff9900;
-  --main-yellow-color: #fb9a08;
+  --main-yellow-color: #ffbf5f;
   --main-gray-blue-color: #3e4454;
   --nav-saaral-color: #5c5c5c;
   --section-line-color: #cacaca;
@@ -268,6 +268,7 @@ footer {
 
   color: rgb(255, 255, 255);
   padding: 2rem;
+  font-size: 1.25ch;
 
 }
 footer p {
@@ -338,6 +339,127 @@ section div .subtitle::before {
   padding: 1%;
   border-radius: 2px;
   font-weight: 300;
+}
+
+
+
+
+
+
+
+
+/*uilchilgee*/
+
+.serviceCon {
+  display: grid;
+  width: 80vw;
+  margin: auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.serviceItem {
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: #5c5c5c;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-size: 15px;
+}
+.serviceItem h3 {
+  font-weight: 300;
+}
+.serviceItem:hover {
+  background-color: #ff9900;
+  color: var(--main-bg-color);
+}
+
+/*project_map*/
+
+.project_map {
+  align-items: center;
+  display: grid;
+}
+.project_map img {
+  margin: auto;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+}
+
+/*texnicCon*/
+
+.texnicCon {
+  display: grid;
+  width: 80vw;
+  margin: auto;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+.texnicItem {
+  position: relative;
+}
+.texnicItem img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  position: relative;
+  z-index: -5;
+}
+.hoverItem {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  z-index: 5;
+  transition: 1s ease;
+}
+
+.texnicItem:hover {
+  scale: 1.3;
+}
+.texnicItem:hover .hoverItem {
+  height: 100%;
+  z-index: 11111;
+}
+
+.hoverItem {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: var(--main-bg-color);
+  border-radius: 3px;
+  font-size: 10px;
+}
+
+.textitem {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.textCon h3 {
+  text-align: center;
+  font-size: 13px;
+}
+.textCon .textitem .starttext {
+  text-align: start;
+  padding-left: 4px;
+}
+.textCon .textitem .endtext {
+  text-align: end;
+  padding-right: 4px;
 }
 
 @media (max-width: 1100px) {
@@ -417,6 +539,7 @@ section div .subtitle::before {
 @media (max-width: 580px) {
 }
 
+
 /*--------------------------------foooter*/
 
 .req-add {
@@ -472,3 +595,4 @@ p {
   font-weight: 300;
   text-align: justify;
 }
+
