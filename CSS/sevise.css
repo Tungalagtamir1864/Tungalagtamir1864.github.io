@@ -24,15 +24,17 @@
   margin-right: 2rem;
 }
 .buttonfilter a{
-  height: auto;
+  
   width: 120px;
   color: #ffffff;
   font-size: 18px;
   border-color: #b1b1b1;
-  font-weight: 400;
+  font-weight: 600;
   background-color: var(--main-yellow-color);
   border: 0.5px solid #cacaca;
   text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;  
 }
 .buttonfilter a:first-child{
   border-top-right-radius: 5px;
@@ -52,18 +54,19 @@
 }
 /* project */
 .projectcon{
+  top: 0;
   display: flex;
   flex-flow: row wrap;
 }
 .project_item {
   position: relative;
-  margin: auto;
-  margin-bottom: 0.5rem;
+  margin:5px 40px;
   border-radius: 5px;
   width: 30ch;
   height: 20ch;
   color:  rgb(240, 240, 240);
   box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+
 }
 .project_item img {
   border-radius: 5px;
