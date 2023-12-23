@@ -28,21 +28,24 @@
 
 </head>
 <body>
-  <div class="req-add mar-t-2">
+<div class="req-add mar-t-2">
   <section>
     <h2 class="t-center">Бидэнд хүсэлтээ үлдээгээрэй</h2>
     <h4 class="t-center">бид тантай эргэн холбогдох болно</h4>
-    <form class="mar-t-2">
+    <form class="mar-t-2" id="requestForm">
       <input name="name" type="text" placeholder="Нэр">
       <input name="email" type="email" placeholder="И-майл">
       <input name="subject" type="text" placeholder="Гарчиг">
       <textarea name="comment" placeholder="Дэлгэрэнгүй"></textarea>
+      <user-card></user-card>  
 
-      <user-card></user-card>
-      <input type="submit" value="Илгээх">
     </form>
-  </section>
+    
+ 
+ 
+</section>
 </div>
   <script type="module" src="user-card.js"></script>
+
 </body>
 </html>

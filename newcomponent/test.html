@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shadow DOM Example</title>
+</head>
+<body>
+
+<div id="host"></div>
+<button id="upper">Make Text Uppercase</button>
+<button id="reload">Reload</button>
+
+<script>
+  const host = document.querySelector("#host");
+  const shadow = host.attachShadow({ mode: "open" });
+  const span = document.createElement("span");
+  span.textContent = "I'm in the shadow DOM";
+  shadow.appendChild(span);
+
+  const upper = document.querySelector("#upper");
+  upper.addEventListener("click", () => {
+    const spans = Array.from(host.shadowRoot.querySelectorAll("span"));
+    for (const span of spans) {
+      span.textContent = span.textContent.toUpperCase();
+    }
+  });
+
+  const reload = document.querySelector("#reload");
+  reload.addEventListener("click", () => document.location.reload());
+</script>
+
+</body>
+</html>
