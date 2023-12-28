@@ -11,6 +11,7 @@
 }
 .homeBack {
   flex-direction: column;
+  margin-bottom: 5rem;
 }
 .slider-main {
   display: none;
@@ -28,7 +29,7 @@
   color: var(--main-bg-color);
   padding-left: 3%;
   padding: 2%;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 32px;
   letter-spacing: 1.15px;
@@ -42,7 +43,7 @@
   margin-bottom: 9px;
   background: rgba(0, 0, 0, 0.6);
   color: var(--main-bg-color);
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
   border-radius: 2px;
 }
