@@ -57,8 +57,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style: none;
-  font-weight: 100;
+  /*list-style: none;*/
+  
 }
 a {
   text-decoration: none;
@@ -94,6 +94,8 @@ header {
 /* nav хэсэг */
 /* mobile header */
 nav > ul {
+  
+  list-style: none;
   display: flex;
   justify-content: space-between;
 
@@ -301,8 +303,8 @@ section .titleDes .subtitle {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   display: flex;
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 300;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -360,18 +362,20 @@ section div .subtitle::before {
 
 
 /*uilchilgee*/
-.serviceCon.serviceItem{
-  color: #000000;
-  font-size: larger;
-}
+.serviceCon .serviceItem{
+  font-size: 1.08rem;
+  margin-bottom:  1.08rem;
+  color:#3e4454;
+  font-weight: 500;
+}/*
 .serviceCon .serviceItem:before{
   content: '';
   background:url('/Picture/abaut_logo1.webp');
   height:  30px;
   width: 30px;
-  position: absolute;
+  display: block;
 }
-/*
+
 .serviceCon {
   display: grid;
   width: 80vw;

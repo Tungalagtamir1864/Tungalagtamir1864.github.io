@@ -171,7 +171,12 @@
 
 /* Slider */
 /*--------------------------------------ажлын зар дүрэм 2----------*/
-
+.twoSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 80vw;
+  margin: auto;
+}
 /*---------------------------------------------Ажлын зар*/
 .workCon {
   display: grid;
@@ -214,14 +219,20 @@
 
 /************huuli**********/
 
-.law a:before {
-  content: url("/Picture/lawicon.webp");
-  height: 10px;
-  width: 10px;
+.law p:before {
+  content: '';
+ /* background:url('/Picture/abaut_logo1.webp');*/
+ 
+  background:url('/Picture/abaut_logo1.webp');
+  height:  20px;
+  width: 30px;
+  display: inline-block;
+  margin-right: 0.5rem;
 }
-.law a {
+.law p{
   color: #323232;
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 @media (max-width: 1100px) {
@@ -315,7 +326,6 @@
   }
   .twoSection {
     grid-template-columns: repeat(1, 1fr);
-
     width: 80%;
   }
 }
