@@ -332,13 +332,25 @@ section div .subtitle::before {
   position: absolute;
 }
 
-.main-button {
-  background: var(--title-orange-color);
-  color: #fff;
+.main-button1 {
+  background-color: #ff9900;
+  border-radius: 2px;
+  color: white;
   font-size: 15px;
   padding: 1%;
-  border-radius: 2px;
-  font-weight: 300;
+  font-weight: 500;
+  /*box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;*/
+}
+.main-button {
+  
+  border:solid #f2f2f2 0.2px;
+  border-radius: 5px;
+  color: var(--title-orange-color);
+  font-size: 15px;
+  padding: 1%;
+  font-weight: 500;
+  bottom: 15px;
+  /*box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;*/
 }
 
 
@@ -347,9 +359,19 @@ section div .subtitle::before {
 
 
 
-
 /*uilchilgee*/
-
+.serviceCon.serviceItem{
+  color: #000000;
+  font-size: larger;
+}
+.serviceCon .serviceItem:before{
+  content: '';
+  background:url('/Picture/abaut_logo1.webp');
+  height:  30px;
+  width: 30px;
+  position: absolute;
+}
+/*
 .serviceCon {
   display: grid;
   width: 80vw;
@@ -364,16 +386,19 @@ section div .subtitle::before {
   height: 150px;
   justify-content: center;
   align-items: center;
+  border:solid #f2f2f2 0.2px;
   border-radius: 5px;
   color: #5c5c5c;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
   text-align: center;
   font-size: 15px;
+  padding: 2%;
+
 }
 .serviceItem h3 {
-  font-weight: 300;
+  font-weight: 400;
 }
-.serviceItem:hover {
+*/
+/*.serviceItem:hover {
   background-color: #ff9900;
   color: var(--main-bg-color);
 }
@@ -501,7 +526,7 @@ section div .subtitle::before {
   }
   .overview ul li {
     margin-left: 1rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   #choose {
     gap: 1rem;

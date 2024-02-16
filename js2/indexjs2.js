@@ -72,7 +72,7 @@ class RecentProject {
         "X-Master-Key": "$2b$10$YOUR_MASTER_KEY",
       },
     })
-      .then((result) => result.json())
+      .then((result) => result.json()) 
       .then((jsob) => {
         const filteredArray = jsob.record.records
           .filter((item) => item.profil)

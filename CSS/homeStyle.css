@@ -81,6 +81,7 @@
   border-radius: 3px;
   border: 0.2px solid #f0f0f0;
   padding: 6%;
+  /*box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;*/
 }
 .griditem p {
   color: #5c5c5c;
