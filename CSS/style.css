@@ -360,14 +360,17 @@ section div .subtitle::before {
 
 
 
-
+section .serviceCon{
+  padding-left: 5%;
+}
 /*uilchilgee*/
-.serviceCon .serviceItem{
+section .serviceCon .serviceItem{
   font-size: 1.08rem;
   margin-bottom:  1.08rem;
-  color:#3e4454;
+  color:#515151;
   font-weight: 500;
-}/*
+}
+/*
 .serviceCon .serviceItem:before{
   content: '';
   background:url('/Picture/abaut_logo1.webp');
