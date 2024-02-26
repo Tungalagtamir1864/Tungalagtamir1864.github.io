@@ -31,6 +31,7 @@ class Project {
     gebi(`${element}_${this.id}`).addEventListener(eventType, (event) => {
       this[property] = event.target.innerHTML;
       project_item._hasChanged = true;
+      console.log("vmklfd");
     });
     return this;
   }
@@ -108,6 +109,7 @@ console.log("start");
 
 const params = new URLSearchParams(document.location.search); // params үүсгэх
 const profil = params.get("profil");
+console.log(profil);
 
 const recentProject = new RecentProject(
   "https://api.jsonbin.io/v3/b/6554e0d454105e766fd0637f",
